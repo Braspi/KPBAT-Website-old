@@ -1,7 +1,46 @@
 @import "../global.less";
 
-p {
-	text-align: center;
-	color: @color;
-	padding-top: 19px;
+* {
+	color: @light;
+}
+
+.logo {
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: @navHeight - 10px;
+}
+
+.links {
+	display: flex;
+	margin: auto;
+	width: 50%;
+	justify-content: space-around;
+
+	a {
+		margin-top: calc(@navHeight / 2);
+		transform: translateY(-54%);
+		font-size: 2em;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
+
+@flagWidth: 60px;
+.lang {
+	position: absolute;
+	right: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: space-around;
+	width: @flagWidth * 2 + 20px;
+
+	img {
+		width: @flagWidth;
+		height: calc(@flagWidth / 1.7);
+		padding: 5px;
+		cursor: pointer;
+	}
 }

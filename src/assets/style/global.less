@@ -5,31 +5,33 @@
     margin: 0;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
-    color: @color;
+    color: @dark;
 }
 
 ::selection {
-	color: @bgc;
-	background-color: @color;
+	color: @light;
+	background-color: @dark;
 }
 
-@bgc: #D8D8D8;
-@color: #2A2A2A;
-@navHeight: 60px;
+@light: #D8D8D8;
+@dark: #2A2A2A;
+@navHeight: 100px;
 
 // Views
 .home {
-	background-color: @bgc;
+	background-color: @light;
 	width: 100vw;
 	min-height: calc(100vh - @navHeight);
-	color: @color;
+	color: @dark;
 }
 
 // Components
 .nav {
 	width: 100vw;
 	height: @navHeight;
-	background-color: @bgc;
+	background-color: @dark;
+	color: @light;
+	position: relative;
 }
 
 // Global
@@ -48,5 +50,29 @@ form {
 			font-size: 1.2em;
 			text-align: center;
 		}
+	}
+}
+
+.hua {
+    display: inline-block;
+    position: relative;
+
+    &:after {
+	    content: '';
+	    position: absolute;
+	    width: 100%;
+	    transform: scaleX(0);
+	    height: 2px;
+	    bottom: -1px;
+	    left: 0;
+	    background-color: @light;
+	    text-shadow: 2px 2px @light;
+	    transform-origin: bottom right;
+	    transition: transform 0.25s ease-out;
+	}
+
+	&:hover:after {
+	    transform: scaleX(1);
+	    transform-origin: bottom left;
 	}
 }
