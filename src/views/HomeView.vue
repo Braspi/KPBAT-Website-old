@@ -1,8 +1,9 @@
 <template lang="html">
     <div class="home">
-        <div class="back-ground">
-            <img src="..//assets/icon/zdj1.jpg">
-        </div>
+        <main>
+            <p class="title">{{ $t("main.title") }}</p>
+            <p class="desc">{{ $t("main.desc") }}</p>
+        </main>
     </div>
 </template>
 <script>

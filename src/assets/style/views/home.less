@@ -1,1 +1,27 @@
 @import "../global.less";
+
+main {
+	width: 90vw;
+	height: calc(90vh - @navHeight);
+	background-color: @darkAlpha;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+
+	p {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: max-content;
+	}
+
+	p.title {
+		font-size: 100px;
+		top: 30%;
+	}
+	p.desc {
+		font-size: 30px;
+		top: 48%;
+	}
+}

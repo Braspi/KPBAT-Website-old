@@ -1,6 +1,11 @@
 {
     "nav": {
-        "galery-nav": "Galeria",
-        "language" : "Changer de langue"
+        "gallery": "Galerie",
+        "home" : "Maison",
+        "contact" : "Contact"
+    },
+    "main": {
+        "title": "KPBAT",
+        "desc": "Clairement la meilleure entreprise de rénovation du marché."
     }
 }

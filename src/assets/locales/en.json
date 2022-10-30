@@ -1,6 +1,11 @@
 {
     "nav": {
-        "galery-nav": "Galeria",
-        "language" : "Change language"
+        "gallery": "Gallery",
+        "home" : "Home",
+        "contact" : "Contact"
+    },
+    "main": {
+        "title": "KPBAT",
+        "desc": "Clearly the best renovation company in the market."
     }
 }
