@@ -1,0 +1,75 @@
+@import '../../global.less';
+
+main {
+	width: 43%;
+	position: absolute;
+	top: calc(53% - @navHeight);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 50vh;
+
+	p {
+		font-weight: 400;
+	}
+
+	.title {
+		font-size: 2em;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	> div {
+		background-color: white;
+		height: 100%;
+		border-radius: 10px;
+		position: relative;
+
+		> img {
+			width: 40%;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			user-select: none;
+		}
+
+		form {
+			position: absolute;
+			right: 100px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 40%;
+
+			label {
+				color: @dark;
+				display: block;
+				margin-bottom: 5px;
+			}
+
+			input {
+				border-radius: 10px;
+				border: 1px solid #000;
+				width: 353px;
+				height: 28px;
+				font-size: 1.5em;
+				padding: 10px;
+			}
+
+			input[type="submit"] {
+				.btn();
+				width: 373px;
+				height: 48px;
+				font-size: 1.5em;
+				border-radius: 10px;
+			}
+			.break {
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}
+		}
+	}
+
+	.copy {
+		margin-top: 20px;
+		text-align: center;
+	}
+}

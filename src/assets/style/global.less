@@ -21,10 +21,18 @@
 // Views
 .home {
 	background-color: @light;
+	color: @dark;
 	width: 100vw;
 	min-height: calc(100vh - @navHeight);
-	color: @dark;
 	margin-top: 0px;
+	position: relative;
+}
+
+.panelLogin {
+	background-color: @dark;
+	color: @light;
+	width: 100vw;
+	height: calc(100vh - @navHeight);
 	position: relative;
 }
 
@@ -78,4 +86,23 @@ form {
 	    transform: scaleX(1);
 	    transform-origin: bottom left;
 	}
+}
+
+.btn() {
+	text-decoration: none;
+	color: @light;
+	background-color: @dark;
+	padding: 10px 50px;
+	border-radius: 3px;
+	border: none;
+	user-select: none;
+	cursor: pointer;
+
+	&:hover {
+		background-color: @hoverColor;
+	}
+}
+
+.break {
+	display: block;	
 }
