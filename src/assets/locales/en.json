@@ -3,5 +3,11 @@
         "gallery": "Gallery",
         "home" : "Home",
         "contact" : "Contact"
+    },
+    "footer": {
+        "home" : "Home",
+        "gallery": "Gallery",
+        "contact" : "Contact",
+        "how-works" : "How we work"
     }
 }

@@ -15,7 +15,9 @@
 
 @light: #D8D8D8;
 @dark: #2A2A2A;
+@hoverColor: #727272;
 @navHeight: 100px;
+@footerHeight: 388px;
 
 // Views
 .home {
@@ -32,6 +34,14 @@
 	width: 100vw;
 	height: @navHeight;
 	background-color: @dark;
+	color: @light;
+	position: relative;
+}
+
+.footer{
+	background-color: @dark;
+	width: 100vw;
+	height: @footerHeight;
 	color: @light;
 	position: relative;
 }
@@ -78,3 +88,4 @@ form {
 	    transform-origin: bottom left;
 	}
 }
+

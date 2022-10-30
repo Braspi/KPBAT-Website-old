@@ -1,0 +1,52 @@
+@import "../global.less";
+
+*{
+  color: @light;
+}
+
+.logo {
+  position: absolute;
+  left: 80px;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 200px;
+}
+
+.links {
+  display: flex;
+  margin: auto;
+  width: 40%;
+  justify-content: space-around;
+
+  a {
+    margin-top: 140px;
+    transform: translateY(-54%);
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover{
+      color: @hoverColor;
+      transition: 0.25s color ease-in-out;
+    }
+  }
+}
+
+hr{
+  width: 95%;
+  margin: auto;
+  margin-top: 70px;
+  background: @light;
+}
+
+.copyright {
+  display: flex;
+  margin: auto;
+  p:last-of-type{
+    top: 200px;
+  }
+}
+
+
+
+

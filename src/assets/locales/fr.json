@@ -3,5 +3,11 @@
         "gallery": "Galerie",
         "home" : "Maison",
         "contact" : "Contact"
+    },
+    "footer": {
+        "home" : "Maison",
+        "gallery": "Galerie",
+        "contact" : "Contact",
+        "how-works" : "Comment nous travaillons"
     }
 }
