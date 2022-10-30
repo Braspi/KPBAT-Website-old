@@ -4,28 +4,32 @@ import router from './router';
 import App from './App.vue';
 import './assets/style/global.less';
 
-
 import { library } from '@fortawesome/fontawesome-svg-core' /* import the fontawesome core */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome' /* import font awesome icon component */
 
 /* import specific icons */
 import {  } from '@fortawesome/free-solid-svg-icons';
-import {  } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons';
 import {  } from '@fortawesome/free-regular-svg-icons';
 
 /* You must provide every one imported icon */
-library.add();
+library.add(
+    // solid
+    
+    // brands
+    faFacebook, faTwitter, faInstagram, faPinterest
+    // regular
+
+);
 
 /**
  * Setup i18n
  */
 import en from './assets/locales/en.json';
 import fr from './assets/locales/fr.json';
-import pl from './assets/locales/pl.json';
-import ua from './assets/locales/ua.json';
 
 function loadLocaleMessages() {
-    const locales = [{ en: en }, { fr: fr }, { pl: pl }, { ua: ua }];
+    const locales = [{ fr: fr }, { en: en }];
     const messages = {};
     locales.forEach(lang => {
         const key = Object.keys(lang);
@@ -35,8 +39,8 @@ function loadLocaleMessages() {
 }
 
 const i18n = createI18n({
-    locale: 'en', // set locale
-    fallbackLocale: 'en', // set fallback locale
+    locale: 'fr', // set locale
+    fallbackLocale: 'fr', // set fallback locale
     messages: loadLocaleMessages()
 })
 

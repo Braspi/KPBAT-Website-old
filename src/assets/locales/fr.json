@@ -1,6 +1,7 @@
 {
     "nav": {
-        "galery-nav": "Galeria",
-        "language" : "Changer de langue"
+        "gallery": "Galerie",
+        "home" : "Maison",
+        "contact" : "Contact"
     }
 }
