@@ -1,7 +1,8 @@
 <template lang="html">
     <div class="home">
         <main>
-            
+            <p class="title">{{ $t("main.title") }}</p>
+            <p class="desc">{{ $t("main.desc") }}</p>
         </main>
     </div>
 </template>

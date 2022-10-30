@@ -4,12 +4,18 @@
 	color: @light;
 }
 
+::selection {
+	color: @dark;
+	background-color: @light;
+}
+
 .logo {
 	position: absolute;
 	left: 20px;
 	top: 50%;
 	transform: translateY(-50%);
 	width: @navHeight - 10px;
+	user-select: none;
 }
 
 .links {
@@ -44,5 +50,6 @@
 		height: calc(@flagWidth / 1.7);
 		padding: 5px;
 		cursor: pointer;
+		user-select: none;
 	}
 }
