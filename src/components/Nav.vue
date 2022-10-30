@@ -151,4 +151,5 @@
   }
 }
 </style>
-<style scoped src="@/assets/style/components/nav.less" lang="less"> </style>
+<style scoped src="@/assets/style/components/nav.less" lang="less">
+</style>
