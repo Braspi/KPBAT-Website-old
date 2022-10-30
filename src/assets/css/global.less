@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    color: @color;
+}
+
+::selection {
+	color: @bgc;
+	background-color: @color;
+}
+
+@bgc: #D8D8D8;
+@color: #2A2A2A;
+
+body { background-color: @bgc; }
+
+form {
+	width: 60%;
+	margin: auto;
+	padding: 20px;
+
+	fieldset {
+		padding: 20px;
+
+		legend {
+			padding-left: 10px;
+			padding-right: 10px;
+			user-select: none;
+			font-size: 1.2em;
+			text-align: center;
+		}
+	}
+}
