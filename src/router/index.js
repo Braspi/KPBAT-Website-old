@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
-import PanelLoginView from '@/views/panel/PanelLoginView.vue';
 import PanelView from '@/views/panel/PanelView.vue';
+import PanelLoginView from '@/views/panel/PanelLoginView.vue';
+import GalleryPanelView from '@/views/panel/GalleryPanelView.vue';
+import StatsView from '@/views/panel/StatsView.vue';
 import Error404 from '@/views/errors/404View.vue';
 
 const routes = [
@@ -17,13 +19,23 @@ const routes = [
     },
     {
         path: '/panel',
-        name: 'panelLogin',
-        component: PanelLoginView,
+        name: 'panel',
+        component: PanelView,
         children: [
             {
-                path: '',
-                name: 'panel',
-                component: PanelView,
+                path: 'login',
+                name: 'panelLogin',
+                component: PanelLoginView
+            },
+            {
+                path: 'gallery',
+                name: 'galleryPanel',
+                component: GalleryPanelView
+            },
+            {
+                path: 'stats',
+                name: 'stats',
+                component: StatsView
             },
         ]
     }

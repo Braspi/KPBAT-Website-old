@@ -13,13 +13,23 @@
 						<label for="pass">Password</label>
 						<input type="password" id="pass">
 					</span>
-					<input type="submit" value="Login">
+					<input type="button" value="Login" @click="login()">
 				</form>
 			</div>
 			<p class="copy">&copy; 2022 KP BAT. All rights Reserved</p>
 		</main>
 	</div>
 </template>
+
+<script>
+export default {
+	methods: {
+		login() {
+			this.$router.push("/panel")
+		}
+	}
+}
+</script>
 
 <style scoped src="@/assets/style/views/panel/login.less" lang="less">
 </style>

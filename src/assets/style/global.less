@@ -17,6 +17,7 @@
 @hoverColor: #727272;
 @darkAlpha: #2A2A2A91;
 @navHeight: 100px;
+@sidebarWidth: 250px;
 
 // Views
 .home {
@@ -35,6 +36,20 @@
 	height: calc(100vh - @navHeight);
 	position: relative;
 }
+.panel {
+	display: grid; 
+	grid-template-columns: 1fr 1fr; 
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"sidebar box"; 
+
+	.sidebar { grid-area: sidebar; }
+
+	.sidebar + div {
+		grid-area: box;
+		width: calc(100vw - @sidebarWidth);
+	}
+}
 
 // Components
 .nav {
@@ -42,6 +57,13 @@
 	height: @navHeight;
 	background-color: @dark;
 	color: @light;
+	position: relative;
+}
+
+.sidebar {
+	width: @sidebarWidth;
+	height: calc(100vh - @navHeight);
+	background-color: @dark;
 	position: relative;
 }
 
