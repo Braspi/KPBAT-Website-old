@@ -4,6 +4,40 @@
         "home" : "Home",
         "contact" : "Contact"
     },
+    "main": {
+        "title": "We'll find a solution",
+        "desc": "Clearly the best renovation company in the market.",
+        "sections": {
+            "s1": {
+                "name": "Who are we?",
+                "title": "Contrary to popular? Belief, Lorem Ipsum is lorem",
+                "line1": "KP BAT deals with the complete implementation of projects, trying to support customers at every stage of the work. At work, the most important thing for us is to meet the expectations of investors, while ensuring the functionality, comfort and aesthetics of the space.",
+                "line2": "We specialize in the renovation of apartments, houses, offices and businesses.",
+                "line3": "Do not hesitate, write or call. We guarantee your satisfaction and an individual approach to your project."
+            },
+            "s2": {
+                "title": "Our lastest work",
+                "desc": "Browse our gallery for ideas and tips, and see why we're worthy of your trust",
+                "btn": "Check All"
+            },
+            "s3": {
+                "title": "Get in Touch with Us",
+                "desc": "If you have any problem please write us!",
+                "form": {
+                    "name": "Name",
+                    "email": "Email",
+                    "phone": "Phone",
+                    "message": "Message",
+                    "submit": "Submit"
+                }
+            },
+            "s4": {
+                "title": "Our Services",
+                "desc": "We provide services and products that set high standards for quality, reliability, durability.",
+                "btn": "Learn More"
+            }
+        }
+    },
     "footer": {
         "home" : "Home",
         "gallery": "Gallery",

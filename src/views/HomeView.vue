@@ -62,12 +62,19 @@
                 </div>
                 <router-link to="#" class="button">{{ $t("main.sections.s4.btn") }}</router-link>
             </section>
+          <Footer/>
         </div>
     </div>
 </template>
 <script>
+import Footer from "@/components/Footer";
+
+export default {
+  components: {
+    Footer
+  }
+}
 
 </script>
-
 <style scoped src="@/assets/style/views/home.less" lang="less">
 </style>

@@ -15,22 +15,43 @@
 .links {
   display: flex;
   margin: auto;
-  width: 40%;
+  width: 50%;
   justify-content: space-around;
+}
 
-  a {
-    margin-top: 140px;
-    transform: translateY(-54%);
-    font-size: 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &:hover{
+.links a {
+  margin-top: 140px;
+  transform: translateY(-54%);
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+    &:hover {
       color: @hoverColor;
       transition: 0.25s color ease-in-out;
     }
+}
+
+.media {
+  margin-left: 83%;
+  max-width: 180px;
+  position: absolute;
+  top: 30%;
+  a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #3b3b3b;
+    border-radius: 4px;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 6px;
+    transition:all .25s;
+    &:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
   }
 }
+
 
 hr{
   width: 95%;

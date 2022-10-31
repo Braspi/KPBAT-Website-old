@@ -1,6 +1,8 @@
 <template lang="html">
     <div class="footer">
+            <a href="">
               <img src="@/assets/icon/logo/LOGO3.jpg" class="logo" alt="">
+            </a>
 
             <div class="links">
               <router-link to="#">{{ $t("footer.home") }}</router-link>
@@ -10,9 +12,9 @@
             </div>
 
             <div class="media">
-                <a href="https://www.facebook.com/kpbat"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
-                <a href="https://www.instagram.com/kp_bat/"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
-                <a href="#"><font-awesome-icon icon="fa-brands fa-pinterest" /></a>
+                <a href="https://www.facebook.com/kpbat"><font-awesome-icon icon="fa-brands fa-facebook" class="fai"/></a>
+                <a href="https://www.instagram.com/kp_bat/"><font-awesome-icon icon="fa-brands fa-instagram" class="fai"/></a>
+                <a href="#"><font-awesome-icon icon="fa-brands fa-pinterest" class="fai"/></a>
             </div>
 
             <hr size="1px">
