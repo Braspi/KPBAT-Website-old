@@ -2,9 +2,9 @@
     <div class="nav">
         <img src="@/assets/icon/logo/LOGO3.jpg" alt="logo" class="logo">
         <div class="links">
-            <router-link to="#" class="hua">{{ $t("nav.gallery") }}</router-link>
-            <router-link to="#" class="hua">{{ $t("nav.home") }}</router-link>
-            <router-link to="#" class="hua">{{ $t("nav.contact") }}</router-link>
+            <router-link to="/gallery" class="hua">{{ $t("nav.gallery") }}</router-link>
+            <router-link to="/" class="hua">{{ $t("nav.home") }}</router-link>
+            <a href="/#contact" class="hua">{{ $t("nav.contact") }}</a>
         </div>
         <div class="lang">
             <img src="@/assets/icon/flags/france.jpeg" @click="changeLang('fr')" alt="france">
