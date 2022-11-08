@@ -23,6 +23,19 @@
 	margin: auto;
 	width: 35%;
 	justify-content: space-around;
+	flex-wrap: wrap;
+
+
+	@media (max-width: @sizes[desktop]) {
+		width: 50%;
+	}
+	@media (max-width: @sizes[tablet]) {
+		height: @navHeight;
+		width: 20%;
+	}
+	@media (max-width: @sizes[mobile]) {
+		width: 10%;
+	}
 
 	a {
 		margin-top: calc(@navHeight / 2);
@@ -31,6 +44,20 @@
 		font-weight: 400;
 		text-decoration: none;
 		text-transform: uppercase;
+
+		&:hover {
+			color: @hoverColor;
+			transition: 0.25s color ease-in-out;
+		}
+		
+		@media (max-width: @sizes[tablet]) {
+			margin-top: 10px;
+			font-size: 15px;
+			
+			&:first-of-type {
+				margin-top: 20px;
+			}
+		}
 	}
 }
 

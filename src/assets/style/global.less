@@ -11,6 +11,11 @@
 	color: @light;
 	background-color: @dark;
 }
+@sizes: {
+  mobile: 320px;
+  tablet: 768px;
+  desktop: 1024px;
+}
 
 @light: #D8D8D8;
 @dark: #2A2A2A;
@@ -35,7 +40,9 @@
 	height: @navHeight;
 	background-color: @dark;
 	color: @light;
-	position: relative;
+	position: fixed;
+	top: 0;
+	z-index: 10000;
 }
 
 .footer{
