@@ -10,6 +10,20 @@
             <img src="@/assets/icon/flags/france.jpeg" @click="changeLang('fr')" alt="france">
             <img src="@/assets/icon/flags/united_kingdom.jpeg" @click="changeLang('en')" alt="united_kingdom" >
         </div>
+        <div class="burger">
+            <div class="inner">
+                <div class="links">
+                    <router-link to="/gallery" class="hua">{{ $t("nav.gallery") }}</router-link>
+                    <router-link to="/" class="hua">{{ $t("nav.home") }}</router-link>
+                    <a href="/#contact" class="hua">{{ $t("nav.contact") }}</a>
+                </div>
+                <h1>Wybierz Język:</h1>
+                <div class="lang">
+                    <img src="@/assets/icon/flags/france.jpeg" @click="changeLang('fr')" alt="france">
+                    <img src="@/assets/icon/flags/united_kingdom.jpeg" @click="changeLang('en')" alt="united_kingdom" >
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 

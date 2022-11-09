@@ -9,6 +9,20 @@ main {
 	transform: translate(-50%, -50%);
 	position: absolute;
 
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url("https://source.unsplash.com/random/1000x1000");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		filter: brightness(0.5);
+	}
+
 	@font: 2em;
 
 	p {
@@ -18,6 +32,7 @@ main {
 		transform: translateX(-50%);
 		width: 100%;
 		word-wrap: normal;
+		color: @light;
 	}
 
 	p.title {
