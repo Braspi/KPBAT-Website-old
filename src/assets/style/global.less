@@ -12,9 +12,9 @@
 	background-color: @dark;
 }
 @sizes: {
-  mobile: 320px;
-  tablet: 768px;
-  desktop: 1024px;
+	mobile: 320px;
+	tablet: 768px;
+	desktop: 1024px;
 }
 
 @light: #D8D8D8;
@@ -24,10 +24,14 @@
 @footerHeight: 330px;
 @darkAlpha: #2A2A2A91;
 
+#app {
+	background: red;
+}
+
 // Views
 .home {
 	background-color: @light;
-	width: 100vw;
+	width: 100%;
 	min-height: calc(100vh - @navHeight);
 	color: @dark;
 	margin-top: 0px;
@@ -36,18 +40,19 @@
 
 // Components
 .nav {
-	width: 100vw;
+	width: 100%;
 	height: @navHeight;
 	background-color: @dark;
 	color: @light;
-	position: fixed;
-	top: 0;
-	z-index: 10000;
+	position: relative;
+	// position: fixed;
+	// top: 0;
+	// z-index: 10000;
 }
 
 .footer{
 	background-color: @dark;
-	width: 100vw;
+	width: 100%;
 	height: @footerHeight;
 	color: @light;
 	position: relative;

@@ -9,7 +9,6 @@ main {
 	transform: translate(-50%, -50%);
 	position: absolute;
 
-
 	@font: 2em;
 
 	p {
@@ -51,10 +50,10 @@ main {
 .wrapper {
 	position: absolute;
 	top: calc(100vh - @navHeight);
-	width: 100vw;
+	width: 100%;
 
 	section {
-		width: 100vw;
+		width: 100%;
 		min-height: calc(100vh - @navHeight);
 		position: relative;
 
@@ -133,6 +132,7 @@ main {
 			left: 50%;
 			transform: translateX(-50%);
 			text-align: center;
+			width: 90%;
 
 			.title {
 				font-weight: 300;
@@ -149,7 +149,7 @@ main {
 			.desc {
 				font-weight: 400;
 				font-size: 1.5em;
-				white-space: nowrap;
+				width: 100%;
 				
 				@media (max-width: @sizes[tablet]) {
 					font-size: 1em;
