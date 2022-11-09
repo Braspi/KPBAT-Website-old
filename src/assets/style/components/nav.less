@@ -18,23 +18,17 @@
 	user-select: none;
 }
 
-.links {
+.links:not(.inner > .links) {
 	display: flex;
 	margin: auto;
 	width: 35%;
 	justify-content: space-around;
-	flex-wrap: wrap;
-
 
 	@media (max-width: @sizes[desktop]) {
 		width: 50%;
 	}
 	@media (max-width: @sizes[tablet]) {
-		height: @navHeight;
-		width: 20%;
-	}
-	@media (max-width: @sizes[mobile]) {
-		width: 10%;
+		display: none;
 	}
 
 	a {
@@ -65,7 +59,7 @@
 
 @flagWidth: 45px;
 
-.lang {
+.lang:not(.inner > .lang) {
 	position: absolute;
 	right: 30px;
 	top: 50%;
@@ -81,4 +75,75 @@
 		cursor: pointer;
 		user-select: none;
 	}
+
+	@media (max-width: @sizes[tablet]) {
+		display: none;
+	}
+}
+
+.burger {
+	z-index: 1000;
+
+	.inner {
+		width: 100vw;
+		height: 100vh;
+		background-color: @dark;
+		position: relative;
+
+		.links {
+			position: absolute;
+			left: 50%;
+			top: 10%;
+			transform: translateX(-50%);
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+
+			a {
+				margin-top: 20px;
+				font-size: 2em;
+				text-decoration: none;
+				width: max-content;
+
+				&:hover {
+					color: @hoverColor;
+					transition: 0.25s color ease-in-out;
+				}
+			}
+		}
+
+		h1 {
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.lang {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			justify-content: space-around;
+
+			@flagWidth: 150px;
+
+			img {
+				width: @flagWidth;
+				height: calc(@flagWidth / 1.7);
+				padding: 15px;
+				cursor: pointer;
+				user-select: none;
+			}
+		}
+	}
+
+	@media (min-width: @sizes[tablet]) {
+		display: none;
+	}
+}
+
+.hidden {
+	display: none;
 }
