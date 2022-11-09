@@ -37,5 +37,11 @@
                 "btn": "Learn More"
             }
         }
+    },
+    "footer": {
+        "home" : "Home",
+        "gallery": "Gallery",
+        "contact" : "Contact",
+        "how-works" : "How we work"
     }
 }
