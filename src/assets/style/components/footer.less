@@ -15,6 +15,15 @@
 	transform: translateY(-50%);
 	width: 180px;
 	user-select: none;
+		@media(max-width: @sizes[desktop]) {
+			width: 140px;
+		}
+		@media(max-width: @sizes[tablet]) {
+			width: 100px;
+		}
+		@media(max-width: @sizes[mobile]) {
+			display: none;
+		}
 }
 
 .links {
@@ -22,7 +31,12 @@
 	justify-content: space-around;
 	flex-wrap: wrap;
 	margin: auto;
-	width: 50%;
+	width: 55%;
+		@media (max-width: @sizes[mobile]) {
+			flex-direction: column;
+			text-align: center;
+			width: 100%;
+		}
 
 	a {
 		margin-top: 125px;
@@ -38,14 +52,21 @@
 
 		// Nie działa
 		// TODO: naprawić
-		// @media (max-width: @sizes[desktop]) {
-		// 	margin-top: 10px;
-		// 	font-size: 15px;
-
-		// 	&:first-of-type {
-		// 		margin-top: 125px;
-		// 	}
-		// }
+		 @media (max-width: @sizes[desktop]) {
+		 	margin-top: 92px;
+		 	font-size: 18px;
+		 }
+		 @media (max-width: @sizes[tablet]) {
+			 margin-top: 68px;
+			 font-size: 14px;
+		 }
+		 @media (max-width: @sizes[mobile]) {
+			 margin: auto;
+			 //margin-top: 30px;
+			 font-size: 20px;
+			 width: max-content;
+			 text-align: center;
+		 }
 	}
 }
 
@@ -69,6 +90,18 @@
 		transition:all .25s;
 
 		&:hover{ transform:scale(1.1); -webkit-transform:scale(1.1); }
+			@media(max-width: @sizes[desktop]) {
+				width: 40px;
+				height: 40px;
+				font-size: 25px;
+				line-height: 40px;
+			}
+			@media(max-width: @sizes[tablet]) {
+				width: 30px;
+				height: 30px;
+				font-size: 20px;
+				line-height: 30px;
+			}
 	}
 }
 
@@ -78,12 +111,28 @@ hr {
 	margin: auto;
 	margin-top: 70px;
 	background: @light;
+		@media(max-width: @sizes[desktop]) {
+			margin-top: 50px;
+		}
+		@media(max-width: @sizes[tablet]) {
+			margin-top: 25px;
+		}
 }
 
 .copyright {
 	margin-top: 20px;
 	margin-left: 79%;
 	position: absolute;
+		@media(max-width: @sizes[desktop]) {
+			font-size: 13px;
+			margin-left: 74%;
+			margin-top: 15px;
+		}
+		@media(max-width: @sizes[tablet]) {
+			font-size: 10px;
+			margin-left: 72%;
+			margin-top: 12px;
+		}
 }
 
 .contact {
@@ -91,10 +140,18 @@ hr {
 	margin-left: 3%;
 	margin-top: 20px;
 
-	p {
-		display: inline-block;
-		margin-left: 20px;
-	}
+		p {
+			display: inline-block;
+			margin-left: 20px;
+		}
+			@media(max-width: @sizes[desktop]) {
+				font-size: 13px;
+				margin-top: 15px;
+			}
+			@media(max-width: @sizes[tablet]) {
+				font-size: 10px;
+				margin-top: 12px;
+			}
 }
 
 
