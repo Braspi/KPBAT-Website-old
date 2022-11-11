@@ -22,7 +22,9 @@
 			width: 100px;
 		}
 		@media(max-width: @sizes[mobile]) {
-			display: none;
+			top: 16%;
+			left: 33%;
+			width: 140px;
 		}
 }
 
@@ -37,7 +39,6 @@
 			text-align: center;
 			width: 100%;
 		}
-
 	a {
 		margin-top: 125px;
 		transform: translateY(-54%);
@@ -50,22 +51,22 @@
 			transition: 0.25s color ease-in-out;
 		}
 
-		// Nie działa
-		// TODO: naprawić
+		&:first-of-type {
+			margin-top: 40% ;
+		}
+
 		 @media (max-width: @sizes[desktop]) {
 		 	margin-top: 92px;
 		 	font-size: 18px;
 		 }
 		 @media (max-width: @sizes[tablet]) {
-			 margin-top: 68px;
+			 margin-top: 73px;
 			 font-size: 14px;
 		 }
 		 @media (max-width: @sizes[mobile]) {
 			 margin: auto;
-			 //margin-top: 30px;
 			 font-size: 20px;
 			 width: max-content;
-			 text-align: center;
 		 }
 	}
 }
