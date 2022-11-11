@@ -63,8 +63,8 @@
                     <img src="https://source.unsplash.com/random/201x500" alt="">
                     <img src="https://source.unsplash.com/random/202x500" alt="">
                     <img src="https://source.unsplash.com/random/203x500" alt="">
+                    <router-link to="#" class="button">{{ $t("main.sections.s4.btn") }}</router-link>
                 </div>
-                <router-link to="#" class="button">{{ $t("main.sections.s4.btn") }}</router-link>
             </section>
           <Footer/>
         </div>

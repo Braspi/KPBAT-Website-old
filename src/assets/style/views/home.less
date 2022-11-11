@@ -304,18 +304,17 @@ main {
 					height: 500px;
 				}
 			}
-			@media (max-width: @sizes[tablet]) {
-
-			}
 		}
 	}
 }
 
 .invert {
 	background-color: @dark;
+
 	* {
 		color: @light;
 	}
+	
 	::selection {
 		color: @dark;
 		background-color: @light;
