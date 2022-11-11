@@ -8,14 +8,14 @@ import { library } from '@fortawesome/fontawesome-svg-core' /* import the fontaw
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome' /* import font awesome icon component */
 
 /* import specific icons */
-import {  } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons';
 import {  } from '@fortawesome/free-regular-svg-icons';
 
 /* You must provide every one imported icon */
 library.add(
     // solid
-    
+    faBars,
     // brands
     faFacebook, faTwitter, faInstagram, faPinterest
     // regular
