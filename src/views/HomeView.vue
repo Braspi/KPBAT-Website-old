@@ -34,22 +34,24 @@
                 </div>
                 <router-link to="#" class="button">{{ $t("main.sections.s2.btn") }}</router-link>
             </section>
-            <section class="invert" id="contact">
+            <section class="invert">
                 <div class="top">
                     <p class="title">{{ $t("main.sections.s3.title") }}</p>
                     <p class="desc">{{ $t("main.sections.s3.desc") }}</p>
                 </div>
-                <form>
-                    <div class="inputs">
-                        <input type="text" class="inp1" :placeholder="`${$t('main.sections.s3.form.name')}`">
-                        <input type="email" class="inp2" :placeholder="`${$t('main.sections.s3.form.email')}`">
-                        <input type="tel" class="inp3" :placeholder="`${$t('main.sections.s3.form.phone')}`">
-                    </div>
-                    <div class="area">
-                        <textarea cols="30" rows="10" :placeholder="`${$t('main.sections.s3.form.message')}`"></textarea>
-                    </div>
-                    <input type="submit" :value="`${$t('main.sections.s3.form.submit')}`">
-                </form>
+                <div class="form">
+                    <form>
+                        <div class="inputs">
+                            <input type="text" class="inp1" :placeholder="`${$t('main.sections.s3.form.name')}`">
+                            <input type="email" class="inp2" :placeholder="`${$t('main.sections.s3.form.email')}`">
+                            <input type="tel" class="inp3" :placeholder="`${$t('main.sections.s3.form.phone')}`">
+                        </div>
+                        <div class="area">
+                            <textarea cols="30" rows="10" :placeholder="`${$t('main.sections.s3.form.message')}`"></textarea>
+                        </div>
+                        <input type="submit" :value="`${$t('main.sections.s3.form.submit')}`">
+                    </form>
+                </div>
             </section>
             <section>
                 <div class="top">

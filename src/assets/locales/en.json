@@ -2,7 +2,8 @@
     "nav": {
         "gallery": "Gallery",
         "home" : "Home",
-        "contact" : "Contact"
+        "contact" : "Contact",
+        "language": "Choose language"
     },
     "main": {
         "title": "We'll find a solution",
