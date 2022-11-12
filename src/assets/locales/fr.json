@@ -2,7 +2,8 @@
     "nav": {
         "gallery": "Galerie",
         "home" : "Maison",
-        "contact" : "Contact"
+        "contact" : "Contact",
+        "language": "Choisissez la langue"
     },
     "main": {
         "title": "On trouvera une solution",
@@ -37,5 +38,11 @@
                 "btn": "Apprendre encore plus"
             }
         }
+    },
+    "footer": {
+        "home" : "Maison",
+        "gallery": "Galerie",
+        "contact" : "Contact",
+        "how-works" : "durant les travaux"
     }
 }

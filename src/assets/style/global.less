@@ -11,21 +11,27 @@
 	color: @light;
 	background-color: @dark;
 }
+@sizes: {
+	mobile: 480px;
+	tablet: 768px;
+	desktop: 1024px;
+}
 
 @light: #D8D8D8;
 @dark: #2A2A2A;
-@hoverColor: #727272;
-@darkAlpha: #2A2A2A91;
+@hoverColor: #5f5f5f;
 @navHeight: 100px;
+@footerHeight: 330px;
+@darkAlpha: #2A2A2A91;
 @sidebarWidth: 250px;
 
 // Views
 .home {
 	background-color: @light;
-	color: @dark;
-	width: 100vw;
+	width: 100%;
 	min-height: calc(100vh - @navHeight);
-	margin-top: 0px;
+	color: @dark;
+	margin-top: @navHeight;
 	position: relative;
 }
 
@@ -53,11 +59,33 @@
 
 // Components
 .nav {
-	width: 100vw;
+	width: 100%;
 	height: @navHeight;
 	background-color: @dark;
+	// Raczej nie zadziała
+	// background-color: inherit;
+	color: @light;
+	// position: relative;
+	position: fixed;
+	top: 0;
+	z-index: 10000;
+}
+
+.footer{
+	background-color: @dark;
+	width: 100%;
+	height: @footerHeight;
 	color: @light;
 	position: relative;
+		@media(max-width: @sizes[desktop]) {
+			height: @footerHeight - 100px;
+		}
+		@media(max-width: @sizes[tablet]) {
+			height: @footerHeight - 140px;
+		}
+		@media(max-width: @sizes[mobile]) {
+			height: 500px;
+		}
 }
 
 .sidebar {

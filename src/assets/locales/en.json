@@ -2,7 +2,8 @@
     "nav": {
         "gallery": "Gallery",
         "home" : "Home",
-        "contact" : "Contact"
+        "contact" : "Contact",
+        "language": "Choose language"
     },
     "main": {
         "title": "We'll find a solution",
@@ -37,5 +38,11 @@
                 "btn": "Learn More"
             }
         }
+    },
+    "footer": {
+        "home" : "Home",
+        "gallery": "Gallery",
+        "contact" : "Contact",
+        "how-works" : "How we work"
     }
 }
