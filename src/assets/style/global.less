@@ -23,6 +23,7 @@
 @navHeight: 100px;
 @footerHeight: 330px;
 @darkAlpha: #2A2A2A91;
+@sidebarWidth: 250px;
 
 // Views
 .home {
@@ -32,6 +33,28 @@
 	color: @dark;
 	margin-top: @navHeight;
 	position: relative;
+}
+
+.panelLogin {
+	background-color: @dark;
+	color: @light;
+	width: 100vw;
+	height: calc(100vh - @navHeight);
+	position: relative;
+}
+.panel {
+	display: grid; 
+	grid-template-columns: 1fr 1fr; 
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"sidebar box"; 
+
+	.sidebar { grid-area: sidebar; }
+
+	.sidebar + div {
+		grid-area: box;
+		width: calc(100vw - @sidebarWidth);
+	}
 }
 
 // Components
@@ -63,6 +86,13 @@
 		@media(max-width: @sizes[mobile]) {
 			height: 500px;
 		}
+}
+
+.sidebar {
+	width: @sidebarWidth;
+	height: calc(100vh - @navHeight);
+	background-color: @dark;
+	position: relative;
 }
 
 // Global
@@ -108,3 +138,21 @@ form {
 	}
 }
 
+.btn() {
+	text-decoration: none;
+	color: @light;
+	background-color: @dark;
+	padding: 10px 50px;
+	border-radius: 3px;
+	border: none;
+	user-select: none;
+	cursor: pointer;
+
+	&:hover {
+		background-color: @hoverColor;
+	}
+}
+
+.break {
+	display: block;	
+}
