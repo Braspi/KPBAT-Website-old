@@ -41,13 +41,15 @@
 	width: 100vw;
 	height: calc(100vh - @navHeight);
 	position: relative;
+	margin-top: @navHeight;
 }
 .panel {
 	display: grid; 
 	grid-template-columns: 1fr 1fr; 
 	grid-template-rows: 1fr;
 	grid-template-areas: 
-	"sidebar box"; 
+	"sidebar box";
+	margin-top: @navHeight;
 
 	.sidebar { grid-area: sidebar; }
 
