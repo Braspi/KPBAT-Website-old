@@ -35,6 +35,30 @@
                 <router-link to="#" class="button">{{ $t("main.sections.s2.btn") }}</router-link>
             </section>
             <section class="invert">
+              <div class="top">
+                <p class="title">{{ $t("main.sections.s4.title") }}</p>
+                <p class="desc">{{ $t("main.sections.s4.desc") }}</p>
+              </div>
+              <div class="imgs">
+                <div class="button-content">
+                  <p></p>
+                </div>
+                <img src="https://source.unsplash.com/random/200x500" alt="">
+                  <div class="button-content"></div>
+                  <p></p>
+                <img src="https://source.unsplash.com/random/201x500" alt="">
+                  <div class="button-content">
+                  <p></p>
+                </div>
+                <img src="https://source.unsplash.com/random/202x500" alt="">
+                  <div class="button-content">
+                  <p></p>
+                </div>
+                  <img src="https://source.unsplash.com/random/203x500" alt="">
+                  <router-link to="#" class="button">{{ $t("main.sections.s4.btn") }}</router-link>
+              </div>
+            </section>
+            <section>
                 <div class="top">
                     <p class="title">{{ $t("main.sections.s3.title") }}</p>
                     <p class="desc">{{ $t("main.sections.s3.desc") }}</p>
@@ -51,30 +75,6 @@
                         </div>
                         <input type="submit" :value="`${$t('main.sections.s3.form.submit')}`">
                     </form>
-                </div>
-            </section>
-            <section>
-                <div class="top">
-                    <p class="title">{{ $t("main.sections.s4.title") }}</p>
-                    <p class="desc">{{ $t("main.sections.s4.desc") }}</p>
-                </div>
-                <div class="imgs">
-                    <div class="button-content">
-                      <p></p>
-                    </div>
-                    <img src="https://source.unsplash.com/random/200x500" alt="">
-                    <div class="button-content"></div>
-                      <p></p>
-                    <img src="https://source.unsplash.com/random/201x500" alt="">
-                    <div class="button-content">
-                      <p></p>
-                    </div>
-                    <img src="https://source.unsplash.com/random/202x500" alt="">
-                    <div class="button-content">
-                      <p></p>
-                    </div>
-                    <img src="https://source.unsplash.com/random/203x500" alt="">
-                    <router-link to="#" class="button">{{ $t("main.sections.s4.btn") }}</router-link>
                 </div>
             </section>
           <Footer/>
