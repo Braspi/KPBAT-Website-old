@@ -43,18 +43,14 @@
                 <div class="button-content">
                   <p></p>
                 </div>
-                <img src="https://source.unsplash.com/random/200x500" alt="">
+                <img src="https://source.unsplash.com/random/250x500" alt="">
                   <div class="button-content"></div>
                   <p></p>
-                <img src="https://source.unsplash.com/random/201x500" alt="">
+                <img src="https://source.unsplash.com/random/250x500" alt="">
                   <div class="button-content">
                   <p></p>
                 </div>
-                <img src="https://source.unsplash.com/random/202x500" alt="">
-                  <div class="button-content">
-                  <p></p>
-                </div>
-                  <img src="https://source.unsplash.com/random/203x500" alt="">
+                <img src="https://source.unsplash.com/random/250x500" alt="">
                   <router-link to="#" class="button">{{ $t("main.sections.s4.btn") }}</router-link>
               </div>
             </section>
