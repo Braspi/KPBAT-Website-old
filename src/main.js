@@ -3,19 +3,23 @@ import { createI18n } from 'vue-i18n';
 import router from './router';
 import App from './App.vue';
 import './assets/style/global.less';
+import axios from 'axios';
 
 import { library } from '@fortawesome/fontawesome-svg-core' /* import the fontawesome core */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome' /* import font awesome icon component */
 
 /* import specific icons */
-import {  } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons';
 import {  } from '@fortawesome/free-regular-svg-icons';
+
+axios.defaults.baseURL = "http://54f1-62-133-148-146.ngrok.io/"
+axios.defaults.headers.Authorization = `Baerer ${localStorage.accessToken}`
 
 /* You must provide every one imported icon */
 library.add(
     // solid
-    
+    faBars,
     // brands
     faFacebook, faTwitter, faInstagram, faPinterest
     // regular

@@ -11,6 +11,11 @@
 	color: @light;
 	background-color: @dark;
 }
+@sizes: {
+	mobile: 480px;
+	tablet: 768px;
+	desktop: 1024px;
+}
 
 @light: #D8D8D8;
 @dark: #2A2A2A;
@@ -18,31 +23,77 @@
 @navHeight: 100px;
 @footerHeight: 330px;
 @darkAlpha: #2A2A2A91;
+@sidebarWidth: 250px;
 
 // Views
 .home {
 	background-color: @light;
-	width: 100vw;
+	width: 100%;
 	min-height: calc(100vh - @navHeight);
 	color: @dark;
-	margin-top: 0px;
+	margin-top: @navHeight;
 	position: relative;
+}
+
+.panelLogin {
+	background-color: @dark;
+	color: @light;
+	width: 100vw;
+	height: calc(100vh - @navHeight);
+	position: relative;
+	margin-top: @navHeight;
+}
+.panel {
+	display: grid; 
+	grid-template-columns: 1fr 1fr; 
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"sidebar box";
+	margin-top: @navHeight;
+
+	.sidebar { grid-area: sidebar; }
+
+	.sidebar + div {
+		grid-area: box;
+		width: calc(100vw - @sidebarWidth);
+	}
 }
 
 // Components
 .nav {
-	width: 100vw;
+	width: 100%;
 	height: @navHeight;
 	background-color: @dark;
+	// Raczej nie zadziała
+	// background-color: inherit;
 	color: @light;
-	position: relative;
+	// position: relative;
+	position: fixed;
+	top: 0;
+	z-index: 10000;
 }
 
 .footer{
 	background-color: @dark;
-	width: 100vw;
+	width: 100%;
 	height: @footerHeight;
 	color: @light;
+	position: relative;
+		@media(max-width: @sizes[desktop]) {
+			height: @footerHeight - 100px;
+		}
+		@media(max-width: @sizes[tablet]) {
+			height: @footerHeight - 140px;
+		}
+		@media(max-width: @sizes[mobile]) {
+			height: 500px;
+		}
+}
+
+.sidebar {
+	width: @sidebarWidth;
+	height: calc(100vh - @navHeight);
+	background-color: @dark;
 	position: relative;
 }
 
@@ -89,3 +140,21 @@ form {
 	}
 }
 
+.btn() {
+	text-decoration: none;
+	color: @light;
+	background-color: @dark;
+	padding: 10px 50px;
+	border-radius: 3px;
+	border: none;
+	user-select: none;
+	cursor: pointer;
+
+	&:hover {
+		background-color: @hoverColor;
+	}
+}
+
+.break {
+	display: block;	
+}

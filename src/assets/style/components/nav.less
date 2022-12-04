@@ -11,7 +11,7 @@
 
 .logo {
 	position: absolute;
-	left: 20px;
+	left: calc(@sidebarWidth / 4);
 	top: 50%;
 	transform: translateY(-50%);
 	width: @navHeight - 10px;
@@ -24,6 +24,13 @@
 	width: 35%;
 	justify-content: space-around;
 
+	@media (max-width: @sizes[desktop]) {
+		width: 50%;
+	}
+	@media (max-width: @sizes[tablet]) {
+		display: none;
+	}
+
 	a {
 		margin-top: calc(@navHeight / 2);
 		transform: translateY(-54%);
@@ -31,6 +38,11 @@
 		font-weight: 400;
 		text-decoration: none;
 		text-transform: uppercase;
+
+		&:hover {
+			color: @hoverColor;
+			transition: 0.25s color ease-in-out;
+		}
 	}
 }
 
@@ -52,4 +64,89 @@
 		cursor: pointer;
 		user-select: none;
 	}
+
+	@media (max-width: @sizes[tablet]) {
+		display: none;
+	}
+}
+
+.bars {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 1001;
+
+	@media (min-width: @sizes[tablet]) {
+		display: none;
+	}
+}
+
+.burger {
+	z-index: 1000;
+
+	.inner {
+		width: 100vw;
+		height: 100vh;
+		background-color: @dark;
+		position: relative;
+
+		.links {
+			position: absolute;
+			left: 50%;
+			top: 10%;
+			transform: translateX(-50%);
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+
+			a {
+				margin-top: 20px;
+				font-size: 2em;
+				text-decoration: none;
+				width: max-content;
+				align-self: center;
+
+				&:hover {
+					color: @hoverColor;
+					transition: 0.25s color ease-in-out;
+				}
+			}
+		}
+
+		h1 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.lang {
+			position: absolute;
+			left: 50%;
+			top: 60%;
+			transform: translateX(-50%);
+			display: flex;
+			justify-content: space-around;
+
+			@flagWidth: 150px;
+
+			img {
+				width: @flagWidth;
+				height: calc(@flagWidth / 1.7);
+				padding: 15px;
+				cursor: pointer;
+				user-select: none;
+			}
+		}
+	}
+
+	@media (min-width: @sizes[tablet]) {
+		display: none;
+	}
+}
+
+.hidden {
+	display: none;
 }
