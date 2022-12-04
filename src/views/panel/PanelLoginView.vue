@@ -7,11 +7,11 @@
 				<form>
 					<span class="break">
 						<label for="user">Username</label>
-						<input type="text" id="user">
+						<input type="text" id="user" v-model="username">
 					</span>
 					<span class="break">
 						<label for="pass">Password</label>
-						<input type="password" id="pass">
+						<input type="password" id="pass"  v-model="password">
 					</span>
 					<input type="button" value="Login" @click="login()">
 				</form>
@@ -22,10 +22,24 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
+	data() {
+		return {
+			username: "",
+			password: "",
+		}
+	},
 	methods: {
 		login() {
-			this.$router.push("/panel")
+			axios.post("/api/auth/login", { email: this.username, password: this.password }).then((res) => {
+				if (res.status == 200) {
+					localStorage.accessToken = res.data.accessToken;
+					this.$router.push("/panel");
+				}
+			}).catch((e) => {
+				console.error(e);
+			})
 		}
 	}
 }
