@@ -3,6 +3,7 @@
 		<div class="container">
 			<router-link to="/panel/gallery"><span :class="[(this.$route.name == `galleryPanel`) ? `active` : '']"></span>Gallery Add</router-link>
 			<router-link to="/panel/stats"><span :class="[(this.$route.name == `stats`) ? `active` : '']"></span>Website Stats</router-link>
+			<router-link to="/panel/users"><span :class="[(this.$route.name == `users`) ? `active` : '']"></span>Manage Users</router-link>
 		</div>
 	</div>
 </template>
