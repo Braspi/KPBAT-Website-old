@@ -22,6 +22,16 @@
                 "btn": "Check All"
             },
             "s3": {
+                "title": "Our Services",
+                "desc": "We provide services and products that set high standards for quality, reliability, durability.",
+                "btn": "Learn More",
+                "imgs": {
+                    "img1": "Exterior Renovation",
+                    "img2": "Interior Renovation",
+                    "img3": "Energy Renovation"
+                }
+            },
+            "s4": {
                 "title": "Get in Touch with Us",
                 "desc": "If you have any problem please write us!",
                 "form": {
@@ -31,11 +41,6 @@
                     "message": "Message",
                     "submit": "Submit"
                 }
-            },
-            "s4": {
-                "title": "Our Services",
-                "desc": "We provide services and products that set high standards for quality, reliability, durability.",
-                "btn": "Learn More"
             }
         }
     },

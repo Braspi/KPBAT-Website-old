@@ -36,40 +36,47 @@
             </section>
             <section class="invert">
               <div class="top">
-                <p class="title">{{ $t("main.sections.s4.title") }}</p>
-                <p class="desc">{{ $t("main.sections.s4.desc") }}</p>
+                <p class="title">{{ $t("main.sections.s3.title") }}</p>
+                <p class="desc">{{ $t("main.sections.s3.desc") }}</p>
               </div>
               <div class="imgs">
-                <div class="button-content">
-                  <p></p>
+                <div class="img">
+                    <img src="https://source.unsplash.com/random/250x500" alt="">
+                    <div class="button-content">
+                        <p>{{ $t("main.sections.s3.imgs.img1") }}</p>
+                    </div>
                 </div>
-                <img src="https://source.unsplash.com/random/250x500" alt="">
-                  <div class="button-content"></div>
-                  <p></p>
-                <img src="https://source.unsplash.com/random/250x500" alt="">
-                  <div class="button-content">
-                  <p></p>
+                <div class="img">
+                    <img src="https://source.unsplash.com/random/251x500" alt="">
+                    <div class="button-content">
+                        <p>{{ $t("main.sections.s3.imgs.img2") }}</p>
+                    </div>
                 </div>
-                <img src="https://source.unsplash.com/random/250x500" alt="">
-                  <router-link to="#" class="button">{{ $t("main.sections.s4.btn") }}</router-link>
+                <div class="img">
+                    <img src="https://source.unsplash.com/random/252x500" alt="">
+                    <div class="button-content">
+                        <p>{{ $t("main.sections.s3.imgs.img3") }}</p>
+                    </div>
+                </div>
+                <router-link to="#" class="button">{{ $t("main.sections.s3.btn") }}</router-link>
               </div>
             </section>
             <section>
                 <div class="top">
-                    <p class="title">{{ $t("main.sections.s3.title") }}</p>
-                    <p class="desc">{{ $t("main.sections.s3.desc") }}</p>
+                    <p class="title">{{ $t("main.sections.s4.title") }}</p>
+                    <p class="desc">{{ $t("main.sections.s4.desc") }}</p>
                 </div>
                 <div class="form">
                     <form>
                         <div class="inputs">
-                            <input type="text" class="inp1" :placeholder="`${$t('main.sections.s3.form.name')}`">
-                            <input type="email" class="inp2" :placeholder="`${$t('main.sections.s3.form.email')}`">
-                            <input type="tel" class="inp3" :placeholder="`${$t('main.sections.s3.form.phone')}`">
+                            <input type="text" class="inp1" :placeholder="`${$t('main.sections.s4.form.name')}`">
+                            <input type="email" class="inp2" :placeholder="`${$t('main.sections.s4.form.email')}`">
+                            <input type="tel" class="inp3" :placeholder="`${$t('main.sections.s4.form.phone')}`">
                         </div>
                         <div class="area">
-                            <textarea cols="30" rows="10" :placeholder="`${$t('main.sections.s3.form.message')}`"></textarea>
+                            <textarea cols="30" rows="10" :placeholder="`${$t('main.sections.s4.form.message')}`"></textarea>
                         </div>
-                        <input type="submit" :value="`${$t('main.sections.s3.form.submit')}`">
+                        <input type="submit" :value="`${$t('main.sections.s4.form.submit')}`">
                     </form>
                 </div>
             </section>

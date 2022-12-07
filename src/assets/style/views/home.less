@@ -227,6 +227,7 @@ main {
 				transform: translate(-50%, -50%);
 
 				form {
+					margin-top: 20px;
 					width: 80%;
 
 					.inputs {
@@ -284,6 +285,7 @@ main {
 		}
 		&:nth-of-type(3) {
 			margin-bottom: 50px;
+
 			.button {
 				background-color: @light;
 				color: @dark;
@@ -301,9 +303,31 @@ main {
 				justify-content: space-around;
 				position: relative;
 
-				img {
+				.img {
 					width: 20%;
 					height: 500px;
+					position: relative;
+
+					img {
+						width: 100%;
+						height: 100%;
+					}
+
+					@padding: 5px;
+
+					.button-content {
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						margin: auto;
+						font-size: 1.8em;
+						text-align: center;
+						padding: @padding;
+						width: calc(100% - (@padding * 2));
+						height: 75px;
+						background-color: rgba(0, 0, 0, 0.85);
+					}
+
 				}
 			}
 		}
