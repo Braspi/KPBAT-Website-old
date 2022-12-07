@@ -1,7 +1,7 @@
 {
     "nav": {
         "gallery": "Galerie",
-        "home" : "Maison",
+        "home" : "Accueli",
         "contact" : "Contact",
         "language": "Choisissez la langue"
     },
@@ -11,8 +11,8 @@
         "sections": {
             "s1": {
                 "name": "Qui sommes nous?",
-                "title": "Contrary to popular? Belief, Lorem Ipsum is lorem",
-                "line1": "KP BAT s'occupe de la mise en œuvre complète des projets, en essayant d'accompagner les clients à chaque étape des travaux. Au travail, le plus important pour nous est de répondre aux attentes des investisseurs, tout en veillant au fonctionnalisme, au confort et à l'esthétique de l'espace.",
+                "title": "KP BAT s'occupe de la mise en œuvre complète des projets.",
+                "line1": "En essayant d'accompagner les clients à chaque étape des travaux. Au travail, le plus important pour nous est de répondre aux attentes des investisseurs, tout en veillant au fonctionnalisme, au confort et à l'esthétique de l'espace.",
                 "line2": "Nous sommes spécialisés dans la rénovation d’appartements, maisons, bureaux et commerces.",
                 "line3": "N’hésitez pas, écrivez ou appelez. Nous garantissons votre satisfaction et une approche individuelle de votre projet."
             },

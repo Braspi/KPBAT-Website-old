@@ -6,6 +6,7 @@ import GalleryPanelView from '@/views/panel/GalleryPanelView.vue';
 import StatsView from '@/views/panel/StatsView.vue';
 import UsersView from '@/views/panel/ManageUsersView.vue';
 import Error404 from '@/views/errors/404View.vue';
+import CategoryView from '@/views/gallery/CategoryView.vue';
 
 const routes = [
     {
@@ -47,6 +48,11 @@ const routes = [
         path: '/login',
         name: 'panelLogin',
         component: PanelLoginView
+    },
+    {
+        path: '/category',
+        name: 'category',
+        component: CategoryView,
     },
 ]
 

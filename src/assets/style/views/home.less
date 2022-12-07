@@ -37,7 +37,7 @@ main {
 
 	p.title {
 		font-size: @font * 2;
-		top: 30%;
+		top: 36%;
 
 		@media (max-width: @sizes[tablet]) {
 			font-size: @font * 2 - 1em;
@@ -49,7 +49,7 @@ main {
 	}
 	p.desc {
 		font-size: @font;
-		top: 48%;
+		top: 46%;
 
 		@media (max-width: @sizes[tablet]) {
 			top: 50%;
@@ -163,7 +163,7 @@ main {
 			}
 			.desc {
 				font-weight: 400;
-				font-size: 1.5em;
+				font-size: 1.7em;
 				width: 100%;
 
 				@media (max-width: @sizes[tablet]) {
@@ -216,11 +216,11 @@ main {
 			}
 		}
 
-		&:nth-of-type(3) {
+		&:nth-of-type(4) {
 			.form {
 				width: 60%;
 				min-height: 60%;
-				background-color: @light;
+				background-color: @hoverColorDark;
 				position: absolute;
 				top: 50%;
 				left: 50%;
@@ -282,8 +282,15 @@ main {
 				}
 			}
 		}
-		&:nth-of-type(4) {
+		&:nth-of-type(3) {
 			margin-bottom: 50px;
+			.button {
+				background-color: @light;
+				color: @dark;
+				&:hover {
+					background-color: @hoverColorDark;
+				}
+			}
 
 			.imgs {
 				width: 80%;

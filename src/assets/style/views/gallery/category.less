@@ -1,0 +1,67 @@
+@import '../../global.less';
+
+.category-static {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+main {
+    @font: 2em;
+
+    .top {
+        position: absolute;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+        width: 100%;
+        word-wrap: normal;
+        color: @dark;
+
+        p.title {
+            font-size: @font * 2;
+            top: 36%;
+            // @media (max-width: @sizes[tablet]) {
+            //     font-size: @font * 2 - 1em;
+            // }
+
+            // @media (max-width: @sizes[mobile]) {
+            //     font-size: @font * 2 - 2em;
+            // }
+        }
+        p.desc {
+            font-size: @font;
+            top: 46%;
+
+            // @media (max-width: @sizes[tablet]) {
+            //     top: 50%;
+            //     font-size: @font - 0.5em;
+            // }
+
+            // @media (max-width: @sizes[mobile]) {
+            //     font-size: @font - 0.75em;
+            // }
+        }
+	}
+
+    .top {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 90%;
+    
+        .title {
+            font-weight: 300;
+            font-size: 3em;
+            white-space: nowrap;
+        }
+        .desc {
+            font-weight: 400;
+            font-size: 1.7em;
+            width: 100%;
+        }
+    }
+}
+
