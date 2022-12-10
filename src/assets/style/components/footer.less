@@ -149,7 +149,7 @@ hr {
 
 .copyright {
 	margin-top: 20px;
-	margin-left: 79%;
+	margin-left: 80%;
 	position: absolute;
 
 	@media(max-width: @sizes[desktop]) {
@@ -164,10 +164,10 @@ hr {
 	}
 	@media(max-width: @sizes[mobile]) {
 		font-size: 13px;
-		top: 57%;
+		top: 70%;
 		left: 50%;
 		margin-left: 0px;
-		transform: translateX(-46%);
+		transform: translateX(-50%);
 		white-space: nowrap;
 	}
 }
@@ -179,7 +179,26 @@ hr {
 
 		p {
 			display: inline-block;
-			margin-left: 20px;
+			margin-left: 10px;
+		}
+
+		.next-con {
+			margin-top: 2px ;
+			display: block;
+			font-size: 13px;
+
+			@media(max-width: @sizes[desktop]) {
+				font-size: 9px;
+			}
+			@media(max-width: @sizes[desktop]) {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				left: 48%;
+				top: 50%;
+				// transform: translateX(-60%);
+				font-size: 13px;
+			}
 		}
 
 	@media(max-width: @sizes[desktop]) {

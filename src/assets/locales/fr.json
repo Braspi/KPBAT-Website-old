@@ -17,8 +17,8 @@
                 "line3": "N’hésitez pas, écrivez ou appelez. Nous garantissons votre satisfaction et une approche individuelle de votre projet."
             },
             "s2": {
-                "title": "Notre dernière réalisation",
-                "desc": "Parcourez notre galerie d'idées et de conseils, et voyez pourquoi nous méritons votre confiance",
+                "title": "Nos Dècouvrez dernières réalisations!",
+                "desc": "Parcourez notre galerie et voyez pourquoi nous méritons votre confiance",
                 "btn": "Vérifie tout"
             },
             "s3": {
@@ -32,20 +32,20 @@
                 }
             },
             "s4": {
-                "title": "Prenez contact avec nous",
+                "title": "Envoyez-nous un message",
                 "desc": "Si vous avez un problème, écrivez-nous!",
                 "form": {
-                    "name": "Nom",
+                    "name": "Prénom",
                     "email": "E-mail",
-                    "phone": "Téléphoner",
+                    "phone": "Téléphone",
                     "message": "Message",
-                    "submit": "Soumettre"
+                    "submit": "Envoyer"
                 }
             }
         }
     },
     "footer": {
-        "home" : "Maison",
+        "home" : "Accueli",
         "gallery": "Galerie",
         "contact" : "Contact",
         "how-works" : "durant les travaux"
