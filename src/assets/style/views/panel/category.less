@@ -1,0 +1,41 @@
+@import '../../global.less';
+
+section {
+	width: 90%;
+	min-height: 49px;
+	background-color: @dark;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 20px;
+	border-radius: 10px;
+	color: white;
+	position: relative;
+
+	::selection {
+		background-color: #fff;
+		color: #000;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.container {
+		width: 98%;
+		height: 98%;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 20px;
+
+		img {
+			width: 200px;
+			height: 200px;
+		}
+	}
+}
