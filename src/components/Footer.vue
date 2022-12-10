@@ -21,7 +21,11 @@
 
 		<div class="contact">
 			<p class="number">+33 6 38 61 77 95</p>
-			<p class="mail">support@kpbat.fr</p>
+			<p class="mail">service-client@kpbat.com</p>
+			<div class="next-con">
+				<p class="adress">SASU KP BAT - 85 Boulevard du Général Leclerc, 92000 Nanterre, France</p>
+				<p class="nip">SIREN - 898 355 763</p>
+			</div>
 		</div>
 
 		<div class="copyright">
