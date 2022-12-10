@@ -6,7 +6,10 @@
 				<div v-if="user.role == 'ROLE_ADMIN'" class="admin invert">{{ user.id }}. {{ user.email }}</div>
 			</div>
 			<div class="add">
-				<kp-input v-model="adminInput" label="Email"/>
+				<div>
+					<kp-input v-model="adminNameInput" label="Name"/>
+					<kp-input v-model="adminEmailInput" label="Email"/>
+				</div>
 				<button @click="addUser('ROLE_ADMIN')">Add Admin</button>
 			</div>
 		</section>
@@ -16,7 +19,10 @@
 				<div v-if="user.role == 'ROLE_USER'" class="user">{{ user.id }}. {{ user.email }}</div>
 			</div>
 			<div class="add">
-				<kp-input v-model="userInput" label="Email"/>
+				<div>
+					<kp-input v-model="userNameInput" label="Name"/>
+					<kp-input v-model="userEmailInput" label="Email"/>
+				</div>
 				<button @click="addUser('ROLE_USER')">Add User</button>
 			</div>
 		</section>
@@ -29,8 +35,10 @@ export default {
 	data() {
 		return {
 			users: [],
-			userInput: "",
-			adminInput: "",
+			userNameInput: "",
+			userEmailInput: "",
+			adminNameInput: "",
+			adminEmailInput: "",
 			selectedAdmin: false,
 			selectedUser: false,
 		}
@@ -44,18 +52,20 @@ export default {
 	},
 	methods: {
 		addUser(type) {
+			let name = "";
 			let email = "";
 			if (type == 'ROLE_ADMIN') {
-				email = this.adminInput;
+				name = this.adminNameInput;
+				email = this.adminEmailInput;
 			} else if (type == 'ROLE_USER') {
-				email = this.userInput;
+				name = this.userNameInput;
+				email = this.userEmailInput;
 			}
-			axios.post("/api/users", { "name": 6, "email": email, "role": type }).then((res) => {
-				console.log(res);
-				alert(res.data.password)
+			axios.post("/api/users", { "name": name, "email": email, "role": type }).then((res) => {
+				alert(`Hasło dla użytkownika: ${res.data.password}`)
 			}).catch((e) => {
 				if (e.response.data.errors.includes("email format is invalid!")) {
-					alert("idiota no")
+					alert("Email format is invalid!")
 				}
 				console.error(e.response.data.errors);
 			})

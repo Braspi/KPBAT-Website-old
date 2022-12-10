@@ -1,12 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
+
 import PanelView from '@/views/panel/PanelView.vue';
 import PanelLoginView from '@/views/panel/PanelLoginView.vue';
 import GalleryPanelView from '@/views/panel/GalleryPanelView.vue';
+import CategoryPanelView from '@/views/panel/CategoryPanelView.vue';
 import StatsView from '@/views/panel/StatsView.vue';
 import UsersView from '@/views/panel/ManageUsersView.vue';
-import Error404 from '@/views/errors/404View.vue';
+
 import CategoryView from '@/views/gallery/CategoryView.vue';
+
+import Error404 from '@/views/errors/404View.vue';
 
 const routes = [
     {
@@ -29,8 +33,18 @@ const routes = [
         children: [
             {
                 path: 'gallery',
-                name: 'galleryPanel',
-                component: GalleryPanelView
+                children: [
+                    {
+                        path: '',
+                        name: 'galleryPanel',
+                        component: GalleryPanelView,
+                    },
+                    {
+                        path: ':id',
+                        name: 'galleryCategory',
+                        component: CategoryPanelView,
+                    }
+                ]
             },
             {
                 path: 'stats',
@@ -66,8 +80,7 @@ import axios from 'axios';
 router.beforeEach(async (to, from, next) => {
     if(to.matched.some(record => record.meta.isLoggedIn)){
         try {
-            const user = await axios.get('/api/auth/me', { headers: { "Authorization": `Baerer ${localStorage.accessToken}` } });
-            console.log(user);
+            await axios.get('/api/auth/me', { headers: { "Authorization": `Baerer ${localStorage.accessToken}` } });
         } catch (error) {
             return next('/login')
         }
