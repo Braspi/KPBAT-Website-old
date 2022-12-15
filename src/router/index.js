@@ -8,6 +8,7 @@ import CategoryPanelView from '@/views/panel/CategoryPanelView.vue';
 import StatsView from '@/views/panel/StatsView.vue';
 import UsersView from '@/views/panel/ManageUsersView.vue';
 
+import GalleryView from '@/views/gallery/CategoryView.vue';
 import CategoryView from '@/views/gallery/CategoryView.vue';
 
 import Error404 from '@/views/errors/404View.vue';
@@ -22,6 +23,23 @@ const routes = [
         path: '/:catchAll(.*)',
         name: '404',
         component: Error404,
+    },
+    {
+        path: '/gallery',
+        name: 'gallery',
+        component: GalleryView,
+        children: [
+            {
+                path: '/category',
+                name: 'galleryCategory',
+                component: CategoryView
+            },
+            {
+                path: 'category/:id',
+                name: 'galleryCategory',
+                component: CategoryView
+            },
+        ]
     },
     {
         path: '/panel',
@@ -62,11 +80,6 @@ const routes = [
         path: '/login',
         name: 'panelLogin',
         component: PanelLoginView
-    },
-    {
-        path: '/category',
-        name: 'category',
-        component: CategoryView,
     },
 ]
 

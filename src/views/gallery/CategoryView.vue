@@ -5,9 +5,13 @@
           <p class="title">{{ $t("main.sections.s2.title") }}</p>
           <p class="desc">{{ $t("main.sections.s2.desc") }}</p>
       </div>
-      <!-- <section>
-        .
-      </section> -->
+      <section class="container">
+          <template v-for="category in categories" :key="category.id"> 
+            {{ category }}
+            <!-- <router-link :to="`/category`">
+            <img :src=""> -->
+          </template>
+      </section>
     </div>
   </main>
 </template>
@@ -17,32 +21,19 @@
 </style>
 
  <script>
-    export default {
-      methods: {
-        login() {
-          this.$router.push("/{{name}}")
-        }
-      }
+import axios from "axios";
+export default {
+  data() {
+    return {
+      categories: [],
     }
-
-  // import axios from "axios";
-
-  // export default {
-  //   name: "CategoryView",
-  //   data: ()=> {
-  //     return {
-  //       images: {}
-  //     }
-  //   },
-
-  //   created() {
-  //     axios.get("https://api-v4.yshop.pl/shops/1/products/")
-  //         .then((response) => {
-  //           this.images = response.data
-  //         })
-  //         .catch(function (error) {
-  //           console.log(error);
-  //         });
-  //   }
-  // }
+  },
+  created() {
+    axios.get("/api/categories").then((res) => {
+      this.categories = res.data;
+    }).catch((e) => {
+      console.error(e);
+    })
+  }
+}
 </script> 

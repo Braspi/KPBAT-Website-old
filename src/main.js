@@ -15,7 +15,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons';
 import {  } from '@fortawesome/free-regular-svg-icons';
 
-axios.defaults.baseURL = "http://localhost:3000/"
+axios.defaults.baseURL = "https://kpbat-backend-dev.ycode.ovh/"
 axios.defaults.headers.Authorization = `Baerer ${localStorage.accessToken}`
 
 /* You must provide every one imported icon */
