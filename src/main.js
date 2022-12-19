@@ -3,6 +3,7 @@ import { createI18n } from 'vue-i18n';
 import router from './router';
 import App from './App.vue';
 import './assets/style/global.less';
+// import 'vue3-carousel/carousel.css'
 import axios from 'axios';
 
 import inputElement from '@/components/InputElement.vue';
@@ -15,7 +16,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons';
 import {  } from '@fortawesome/free-regular-svg-icons';
 
-axios.defaults.baseURL = "https://kpbat-backend-dev.ycode.ovh/"
+// axios.defaults.baseURL = "https://kpbat-backend-dev.ycode.ovh/"
+axios.defaults.baseURL = "http://localhost:3000"
 axios.defaults.headers.Authorization = `Baerer ${localStorage.accessToken}`
 
 /* You must provide every one imported icon */
