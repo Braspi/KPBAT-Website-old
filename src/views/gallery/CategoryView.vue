@@ -6,10 +6,11 @@
           <p class="desc">{{ $t("main.sections.s2.desc") }}</p>
       </div>
       <section class="container">
-          <template v-for="category in categories" :key="category.id"> 
-            {{ category }}
-            <!-- <router-link :to="`/category`">
-            <img :src=""> -->
+          <template v-for="category in categories" :key="category.id">
+            <router-link :to="`/category`"> 
+              <p>{{ category.name }}</p>
+              <img :src="category.miniature" alt="">
+            </router-link>
           </template>
       </section>
     </div>
