@@ -1,6 +1,8 @@
 <template lang="html">
   <div class="nav">
-    <img src="@/assets/icon/logo/LOGO3.jpg" alt="logo" class="logo">
+    <router-link to="/">
+      <img src="@/assets/icon/logo/LOGO3.jpg" alt="logo" class="logo">
+    </router-link>
     <div class="links">
       <router-link to="/" class="hua">{{ $t("nav.home") }} </router-link>
       <router-link to="/gallery" class="hua">{{ $t("nav.gallery") }}</router-link>

@@ -1,7 +1,13 @@
 <template lang="html">
     <div class="home">
         <main>
-            <Carousel :autoplay="2000" :wrap-around="true" :mouseDrag="false" :pauseAutoplayOnHover="true" :transition="500">
+            <Carousel 
+            :autoplay="2000" 
+            :wrap-around="true" 
+            :mouseDrag="false" 
+            :pauseAutoplayOnHover="true" 
+            :transition="500"
+            >
                 <Slide v-for="(img, i) in images" :key="i">
                     <img class="carousel__item" :src="img">
                 </Slide>

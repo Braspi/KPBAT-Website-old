@@ -8,9 +8,7 @@ import CategoryPanelView from '@/views/panel/CategoryPanelView.vue';
 import StatsView from '@/views/panel/StatsView.vue';
 import UsersView from '@/views/panel/ManageUsersView.vue';
 
-import GalleryView from '@/views/gallery/GalleryView.vue';
-import CategoryView from '@/views/gallery/CategoryView.vue';
-import ImagesView from '@/views/gallery/ImagesView.vue';
+import GalleryView from '@/views/GalleryView.vue';
 
 import Error404 from '@/views/errors/404View.vue';
 
@@ -29,18 +27,6 @@ const routes = [
         path: '/gallery',
         name: 'gallery',
         component: GalleryView,
-        children: [
-            {
-                path: '',
-                name: 'category',
-                component: CategoryView
-            },
-            {
-                path: ':id',
-                name: 'images',
-                component: ImagesView
-            },
-        ]
     },
     {
         path: '/panel',
