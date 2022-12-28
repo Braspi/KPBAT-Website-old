@@ -1,6 +1,11 @@
 <template lang="html">
     <div class="home">
         <main>
+            <Carousel :autoplay="2000" :wrap-around="true" :mouseDrag="false" :pauseAutoplayOnHover="true" :transition="500">
+                <Slide v-for="(img, i) in images" :key="i">
+                    <img class="carousel__item" :src="img">
+                </Slide>
+            </Carousel>
             <p class="title">{{ $t("main.title") }}</p>
             <p class="desc">{{ $t("main.desc") }}</p>
         </main>
@@ -106,17 +111,24 @@
 import axios from "axios";
 import Footer from "@/components/Footer";
 
+import { Carousel, Slide, Navigation } from 'vue3-carousel'
+import 'vue3-carousel/dist/carousel.css'
+
 export default {
     data() {
         return {
+            currentSlide: 0,
+            images: [
+                "https://source.unsplash.com/random/1300x700",
+                "https://source.unsplash.com/random/1300x701",
+                "https://source.unsplash.com/random/1300x702",
+                "https://source.unsplash.com/random/1300x703",
+            ],
             name: "",
             email: "",
             phone: "",
             message: "",
         }
-    },
-    components: {
-           Footer
     },
     methods: {
         sendMail() {
@@ -129,9 +141,17 @@ export default {
             }).catch((e) => {
                 console.error(e);
             })
-        }
+        },
+        slideTo(val) {
+           this.currentSlide = val
+        },
+    },
+    components: {
+        Footer,
+        Carousel,
+        Slide,
+        Navigation,
     }
-
 }
 
 </script>
