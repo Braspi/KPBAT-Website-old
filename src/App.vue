@@ -1,5 +1,5 @@
 <template>
-  <Nav/>
+  <Nav :class="{ normal: (this.$route.name != 'home') }"/>
   <router-view/>
 </template>
 

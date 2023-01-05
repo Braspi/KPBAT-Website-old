@@ -14,8 +14,17 @@
 	left: calc(@sidebarWidth / 6);
 	top: 50%;
 	transform: translateY(-50%);
-	width: @navHeight - 10px;
+	width: @navHeight + 40px;
 	user-select: none;
+}
+.bg {
+	background-color: @dark;
+	box-shadow: 0px 1px 10px black;
+	transition: background-color .5s;
+}
+.normal {
+	background-color: @dark;
+	box-shadow: 0px 1px 10px black;
 }
 
 .links {

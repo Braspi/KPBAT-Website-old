@@ -2,11 +2,10 @@
     <div class="home">
         <main>
             <Carousel 
-            :autoplay="2000" 
-            :wrap-around="true" 
-            :mouseDrag="false" 
-            :pauseAutoplayOnHover="true" 
-            :transition="500"
+            :autoplay="2000"
+            :wrap-around="true"
+            :mouseDrag="false"
+            :transition="1000"
             >
                 <Slide v-for="(img, i) in images" :key="i">
                     <img class="carousel__item" :src="img">
@@ -69,6 +68,12 @@
                         <p>{{ $t("main.sections.s3.imgs.img3") }}</p>
                     </div>
                 </div>
+                <div class="img">
+                    <img src="https://source.unsplash.com/random/253x500" alt="">
+                    <div class="button-content">
+                        <p>{{ $t("main.sections.s4.imgs.img4") }}</p>
+                    </div>
+                </div>
                 <router-link to="#" class="button">{{ $t("main.sections.s3.btn") }}</router-link>
               </div>
             </section>
@@ -105,7 +110,7 @@
                         </div>
                     </div>
                     <div class="map">
-                        <img src="https://via.placeholder.com/460x541">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1274.0990718208316!2d2.19013932765034!3d48.89889028349159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6637ffc3534d3%3A0x9cf183962cbea637!2s85%20Bd%20du%20G%C3%A9n%C3%A9ral%20Leclerc%2C%2092000%20Nanterre%2C%20Francja!5e0!3m2!1spl!2spl!4v1672865373668!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </section>

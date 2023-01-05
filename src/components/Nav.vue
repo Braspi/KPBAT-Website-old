@@ -1,7 +1,7 @@
 <template lang="html">
-  <div class="nav">
+  <div class="nav" :class="{ bg: !navDetached }" >
     <router-link to="/">
-      <img src="@/assets/icon/logo/LOGO3.jpg" alt="logo" class="logo">
+      <img src="@/assets/icon/logo/LOGO1_alpha.png" alt="logo" class="logo">
     </router-link>
     <div class="links">
       <router-link to="/" class="hua">{{ $t("nav.home") }} </router-link>
@@ -37,7 +37,14 @@ export default {
   data() {
     return {
       hidden: true,
+      navDetached: true,
     }
+  },
+  created() {
+      window.addEventListener('scroll', this.onScroll)
+  },
+  beforeUnmount() {
+      window.removeEventListener('scroll', this.onScroll)
   },
   methods: {
     changeLang(lang) {
@@ -45,6 +52,10 @@ export default {
     },
     showNav() {
       this.hidden = !this.hidden;
+    },
+    onScroll() {
+      let header = document.querySelector('.home main').getBoundingClientRect();
+      this.navDetached = window.pageYOffset < (header.height / 8)
     }
   }
 }

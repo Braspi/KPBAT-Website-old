@@ -75,7 +75,7 @@ export default {
 
             //! ------- Remove Later ------- !//
             for(let i = 0; i < this.images.length; i++) {
-                this.images[i].image = `http://localhost:3000/api/images/${this.images[i].id}`;
+                this.images[i].image = `${axios.defaults.baseURL}/api/images/${this.images[i].id}`;
             }
             //! ------- Remove Later ------- !//
         }).catch((e) => {
