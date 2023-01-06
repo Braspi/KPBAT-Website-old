@@ -27,7 +27,7 @@
                         {{ $t("main.sections.s1.line3") }}
                     </p>
                 </div>
-                <img src="https://source.unsplash.com/random/576x1000" alt="">
+                <img src="https://via.placeholder.com/580x1000" alt="">
             </section>
             <section class="work">
                 <div class="top">
@@ -35,12 +35,12 @@
                     <p class="desc">{{ $t("main.sections.s2.desc") }}</p>
                 </div>
                 <div class="imgs">
-                    <img src="https://source.unsplash.com/random/570x570" alt="">
-                    <img src="https://source.unsplash.com/random/571x571" alt="">
-                    <img src="https://source.unsplash.com/random/572x572" alt="">
-                    <img src="https://source.unsplash.com/random/573x573" alt="">
-                    <img src="https://source.unsplash.com/random/574x574" alt="">
-                    <img src="https://source.unsplash.com/random/575x575" alt="">
+                    <img src="https://via.placeholder.com/570" alt="">
+                    <img src="https://via.placeholder.com/570" alt="">
+                    <img src="https://via.placeholder.com/570" alt="">
+                    <img src="https://via.placeholder.com/570" alt="">
+                    <img src="https://via.placeholder.com/570" alt="">
+                    <img src="https://via.placeholder.com/570" alt="">
                 </div>
                 <router-link to="#" class="button">{{ $t("main.sections.s2.btn") }}</router-link>
             </section>
@@ -51,25 +51,25 @@
               </div>
               <div class="imgs">
                 <div class="img">
-                    <img src="https://source.unsplash.com/random/250x500" alt="">
+                    <img src="https://via.placeholder.com/250x500" alt="">
                     <div class="button-content">
                         <p>{{ $t("main.sections.s3.imgs.img1") }}</p>
                     </div>
                 </div>
                 <div class="img">
-                    <img src="https://source.unsplash.com/random/251x500" alt="">
+                    <img src="https://via.placeholder.com/250x500" alt="">
                     <div class="button-content">
                         <p>{{ $t("main.sections.s3.imgs.img2") }}</p>
                     </div>
                 </div>
                 <div class="img">
-                    <img src="https://source.unsplash.com/random/252x500" alt="">
+                    <img src="https://via.placeholder.com/250x500" alt="">
                     <div class="button-content">
                         <p>{{ $t("main.sections.s3.imgs.img3") }}</p>
                     </div>
                 </div>
                 <div class="img">
-                    <img src="https://source.unsplash.com/random/253x500" alt="">
+                    <img src="https://via.placeholder.com/250x500" alt="">
                     <div class="button-content">
                         <p>{{ $t("main.sections.s4.imgs.img4") }}</p>
                     </div>
@@ -130,10 +130,10 @@ export default {
         return {
             currentSlide: 0,
             images: [
-                "https://source.unsplash.com/random/1300x700",
-                "https://source.unsplash.com/random/1300x701",
-                "https://source.unsplash.com/random/1300x702",
-                "https://source.unsplash.com/random/1300x703",
+                "https://via.placeholder.com/1300x700",
+                "https://via.placeholder.com/1300x700",
+                "https://via.placeholder.com/1300x700",
+                "https://via.placeholder.com/1300x700",
             ],
             name: "",
             email: "",
