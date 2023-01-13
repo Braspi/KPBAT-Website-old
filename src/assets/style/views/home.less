@@ -27,6 +27,7 @@ main {
 		text-align: center;
 		transform: translateX(-50%);
 		width: max-content;
+		text-align: center;
 		word-wrap: normal;
 		color: @light;
 	}
@@ -46,6 +47,8 @@ main {
 	p.desc {
 		font-size: @font;
 		top: 46%;
+		word-break: normal;
+		width: 90%;
 
 		@media (max-width: @sizes[tablet]) {
 			top: 50%;
@@ -148,7 +151,7 @@ main {
 			.title {
 				font-weight: 300;
 				font-size: 3em;
-				white-space: nowrap;
+				word-break: normal;
 
 				@media (max-width: @sizes[tablet]) {
 					font-size: 2em;
@@ -160,7 +163,7 @@ main {
 			.desc {
 				font-weight: 400;
 				font-size: 1.7em;
-				width: 100%;
+				word-break: normal;
 
 				@media (max-width: @sizes[tablet]) {
 					font-size: 1em;

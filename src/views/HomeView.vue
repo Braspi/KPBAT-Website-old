@@ -71,7 +71,7 @@
                 <div class="img">
                     <img src="https://via.placeholder.com/250x500" alt="">
                     <div class="button-content">
-                        <p>{{ $t("main.sections.s4.imgs.img4") }}</p>
+                        <p>{{ $t("main.sections.s3.imgs.img4") }}</p>
                     </div>
                 </div>
                 <router-link to="#" class="button">{{ $t("main.sections.s3.btn") }}</router-link>
