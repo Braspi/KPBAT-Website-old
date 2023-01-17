@@ -4,7 +4,7 @@
       <img src="@/assets/icon/logo/LOGO1_alpha.png" alt="logo" class="logo">
     </router-link>
     <div class="links">
-      <router-link to="/" class="hua">{{ $t("nav.home") }} </router-link>
+      <a href="/#" class="hua">{{ $t("nav.home") }}</a>
       <router-link to="/gallery" class="hua">{{ $t("nav.gallery") }}</router-link>
       <a href="/#contact" class="hua">{{ $t("nav.contact") }}</a>
     </div>
@@ -18,7 +18,7 @@
     <div class="burger">
       <div class="inner" :class="[hidden ? 'hidden' : '']">
         <div class="links">
-          <router-link to="/" class="hua">{{ $t("nav.home") }}</router-link>
+          <a href="/" class="hua">{{ $t("nav.home") }}</a>
           <router-link to="/gallery" class="hua">{{ $t("nav.gallery") }}</router-link>
           <a href="/#contact" class="hua">{{ $t("nav.contact") }}</a>
         </div>

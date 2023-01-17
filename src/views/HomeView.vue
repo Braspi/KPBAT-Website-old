@@ -77,7 +77,7 @@
                 <router-link to="#" class="button">{{ $t("main.sections.s3.btn") }}</router-link>
               </div>
             </section>
-            <section class="form">
+            <section class="form" id="contact">
                 <div class="top">
                     <p class="title">{{ $t("main.sections.s4.title") }}</p>
                     <p class="desc">{{ $t("main.sections.s4.desc") }}</p>
@@ -85,7 +85,7 @@
                 <div class="form-container">
                     <div class="contact-wrap">
                         <div>
-                            <h2>Contact Us</h2>
+                            <h2>{{ $t('main.sections.s4.form.title') }}</h2>
                             <form @submit.prevent="sendMail()">
                                 <div class="p50">
                                     <label for="inp1">{{ $t('main.sections.s4.form.name') }}</label>
@@ -104,7 +104,7 @@
                                     <textarea id="inp4"  v-model="message" :placeholder="`${$t('main.sections.s4.form.message')}`"></textarea>
                                 </div>
                                 <div class="p10">
-                                    <button>Send Message</button>
+                                    <button>{{ $t('main.sections.s4.form.submit') }}</button>
                                 </div>
                             </form>
                         </div>

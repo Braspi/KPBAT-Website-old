@@ -40,6 +40,7 @@
                     "email": "Email",
                     "phone": "Phone",
                     "message": "Message",
+                    "title": "Contact Us",
                     "submit": "Submit"
                 }
             }

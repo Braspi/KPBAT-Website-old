@@ -1,7 +1,7 @@
 {
     "nav": {
         "gallery": "Galerie",
-        "home" : "Accueli",
+        "home" : "Accueil",
         "contact" : "Contact",
         "language": "Choisissez la langue"
     },
@@ -17,7 +17,7 @@
                 "line3": "N’hésitez pas, écrivez ou appelez. Nous garantissons votre satisfaction et une approche individuelle de votre projet."
             },
             "s2": {
-                "title": "Nos Dècouvrez dernières réalisations!",
+                "title": "Découvrez Nos Dernières Réalisations!",
                 "desc": "Parcourez notre galerie et voyez pourquoi nous méritons votre confiance",
                 "btn": "Vérifie tout"
             },
@@ -40,6 +40,7 @@
                     "email": "E-mail",
                     "phone": "Téléphone",
                     "message": "Message",
+                    "title": "Nom",
                     "submit": "Envoyer"
                 }
             }
@@ -50,5 +51,5 @@
         "gallery": "Galerie",
         "contact" : "Contact",
         "how-works" : "durant les travaux"
-    }
+   }
 }
