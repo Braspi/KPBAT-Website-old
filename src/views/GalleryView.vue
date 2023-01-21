@@ -6,8 +6,8 @@
         </div>
         <section class="container">
             <template v-for="category in categories" :key="category.id">
-                <div @click="enableGallery(category.id)">
-                    <img :src="category.miniature" class="contrast-bg">
+                <div @click="enableGallery(category.id-1)">
+                    <img :src="category.miniatureName" class="contrast-bg">
                     <p class="contrast-el">{{ category.name }}</p>
                 </div>
             </template>
@@ -20,7 +20,7 @@
                 v-model="currentSlide"
                 >
                 <Slide v-for="(img, i) in filteredImages" :key="i">
-                    <img :src="img.image">
+                    <img :src="img.href">
                 </Slide>
             </Carousel>
 
@@ -32,7 +32,7 @@
                 ref="carousel"
                 >
                 <Slide v-for="(img, i) in filteredImages" :key="i">
-                    <img :src="img.image" class="carousel__item" @click="slideTo(img.id - 1)">
+                    <img :src="img.href" class="carousel__item" @click="slideTo(i)">
                 </Slide>
             </Carousel>
         </div>
@@ -63,21 +63,21 @@ export default {
         }
     },
     created() {
-        axios.get("/api/categories").then((res) => {
+        axios.get("/categories").then((res) => {
             this.categories = res.data;
-        }).catch((e) => {
-            console.error(e);
-        })
-        axios.get("/api/images").then((res) => {
-            this.images = res.data.filter((c) => {
-                if (c.category) return true;
-            });
 
-            //! ------- Remove Later ------- !//
-            for(let i = 0; i < this.images.length; i++) {
-                this.images[i].image = `${axios.defaults.baseURL}/api/images/${this.images[i].id}`;
+            for (let i = 0; i < this.categories.length; i++) {
+                this.categories[i].miniatureName = `${axios.defaults.baseURL}/categories/${i+1}/miniature`;
+                axios.get(`/categories/${i+1}`).then((res) => {
+                    let val = res.data.images;
+                    for (let j = 0; j < val.length; j++) {
+                        val[j].href = `${axios.defaults.baseURL}/categories/${i+1}/images/${val[j].systemFileName}`
+                    }
+                    this.images.unshift(val);
+                }).catch((e) => {
+                    console.error(e);
+                })
             }
-            //! ------- Remove Later ------- !//
         }).catch((e) => {
             console.error(e);
         })
@@ -87,7 +87,7 @@ export default {
             this.currentSlide = val;
         },
         enableGallery(id) {
-            this.filteredImages = this.images.filter(img => img.category.id == id)
+            this.filteredImages = this.images[id];
             this.currentGallery = id;
             this.galleryShown = true;
 
