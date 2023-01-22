@@ -26,7 +26,7 @@
 
             <Carousel
                 class="thumbnails"
-                :items-to-show="7"
+                :items-to-show="items_to_show"
                 :wrap-around="true"
                 v-model="currentSlide"
                 ref="carousel"
@@ -60,6 +60,7 @@ export default {
             currentSlide: 0,
             images: [],
             filteredImages: [],
+            items_to_show: 5,
         }
     },
     created() {
@@ -81,6 +82,9 @@ export default {
         }).catch((e) => {
             console.error(e);
         })
+    },
+    updated() {
+        this.items_to_show = (window.innerWidth/240).toFixed()
     },
     methods: {
         slideTo(val) {
