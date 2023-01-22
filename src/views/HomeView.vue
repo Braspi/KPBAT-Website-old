@@ -27,7 +27,7 @@
                         {{ $t("main.sections.s1.line3") }}
                     </p>
                 </div>
-                <img src="https://via.placeholder.com/580x1000" alt="">
+                <img :src="require('../assets/img/1.png')" alt="">
             </section>
             <section class="work">
                 <div class="top">
@@ -35,12 +35,12 @@
                     <p class="desc">{{ $t("main.sections.s2.desc") }}</p>
                 </div>
                 <div class="imgs">
-                    <img src="https://via.placeholder.com/570" alt="">
-                    <img src="https://via.placeholder.com/570" alt="">
-                    <img src="https://via.placeholder.com/570" alt="">
-                    <img src="https://via.placeholder.com/570" alt="">
-                    <img src="https://via.placeholder.com/570" alt="">
-                    <img src="https://via.placeholder.com/570" alt="">
+                    <img :src="require('../assets/img/gallery/1.jpg')" alt="">
+                    <img :src="require('../assets/img/gallery/2.jpg')" alt="">
+                    <img :src="require('../assets/img/gallery/3.jpg')" alt="">
+                    <img :src="require('../assets/img/gallery/4.jpg')" alt="">
+                    <img :src="require('../assets/img/gallery/5.jpg')" alt="">
+                    <img :src="require('../assets/img/gallery/6.jpg')" alt="">
                 </div>
                 <router-link to="#" class="button">{{ $t("main.sections.s2.btn") }}</router-link>
             </section>
@@ -51,25 +51,25 @@
               </div>
               <div class="imgs">
                 <div class="img">
-                    <img src="https://via.placeholder.com/250x500" alt="">
+                    <img :src="require('../assets/img/services/1.jpg')" alt="">
                     <div class="button-content">
                         <p>{{ $t("main.sections.s3.imgs.img1") }}</p>
                     </div>
                 </div>
                 <div class="img">
-                    <img src="https://via.placeholder.com/250x500" alt="">
+                    <img :src="require('../assets/img/services/2.jpg')" alt="">
                     <div class="button-content">
                         <p>{{ $t("main.sections.s3.imgs.img2") }}</p>
                     </div>
                 </div>
                 <div class="img">
-                    <img src="https://via.placeholder.com/250x500" alt="">
+                    <img :src="require('../assets/img/services/3.jpg')" alt="">
                     <div class="button-content">
                         <p>{{ $t("main.sections.s3.imgs.img3") }}</p>
                     </div>
                 </div>
                 <div class="img">
-                    <img src="https://via.placeholder.com/250x500" alt="">
+                    <img :src="require('../assets/img/services/4.jpg')" alt="">
                     <div class="button-content">
                         <p>{{ $t("main.sections.s3.imgs.img4") }}</p>
                     </div>
@@ -130,10 +130,10 @@ export default {
         return {
             currentSlide: 0,
             images: [
-                "https://via.placeholder.com/1300x700",
-                "https://via.placeholder.com/1300x700",
-                "https://via.placeholder.com/1300x700",
-                "https://via.placeholder.com/1300x700",
+                require("../assets/img/carousel/1.jpg"),
+                require("../assets/img/carousel/2.jpg"),
+                require("../assets/img/carousel/3.jpg"),
+                require("../assets/img/carousel/4.jpg"),
             ],
             name: "",
             email: "",
