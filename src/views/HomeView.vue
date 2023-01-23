@@ -42,7 +42,7 @@
                     <img :src="require('../assets/img/gallery/5.jpg')" alt="">
                     <img :src="require('../assets/img/gallery/6.jpg')" alt="">
                 </div>
-                <router-link to="#" class="button">{{ $t("main.sections.s2.btn") }}</router-link>
+                <router-link to="/gallery" class="button">{{ $t("main.sections.s2.btn") }}</router-link>
             </section>
             <section class="services invert">
               <div class="top">

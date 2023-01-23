@@ -86,15 +86,16 @@
 	height: @footerHeight;
 	color: @light;
 	position: relative;
-		@media(max-width: @sizes[desktop]) {
-			height: @footerHeight - 100px;
-		}
-		@media(max-width: @sizes[tablet]) {
-			height: @footerHeight - 140px;
-		}
-		@media(max-width: @sizes[mobile]) {
-			height: 500px;
-		}
+
+	@media(max-width: @sizes[desktop]) {
+		height: @footerHeight - 100px;
+	}
+	@media(max-width: @sizes[tablet]) {
+		height: @footerHeight - 140px;
+	}
+	@media(max-width: @sizes[mobile]) {
+		height: 500px;
+	}
 }
 
 .sidebar {
