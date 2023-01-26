@@ -17,7 +17,7 @@
                 "line3": "N’hésitez pas, écrivez ou appelez. Nous garantissons votre satisfaction et une approche individuelle de votre projet."
             },
             "s2": {
-                "title": "Découvrez Nos Dernières Réalisations!",
+                "title": "Découvrez nos dernières réalisations!",
                 "desc": "Parcourez notre galerie et voyez pourquoi nous méritons votre confiance",
                 "btn": "Vérifie tout"
             },
@@ -37,12 +37,16 @@
                 "desc": "Si vous avez un problème, écrivez-nous!",
                 "form": {
                     "name": "Prénom",
+                    "surname": "Nom",
                     "email": "E-mail",
                     "phone": "Téléphone",
                     "message": "Message",
                     "title": "Nom",
                     "submit": "Envoyer"
                 }
+            },
+            "s5": {
+                "title": "Contact us"
             }
         }
     },

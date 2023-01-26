@@ -92,6 +92,10 @@
                                     <input type="text" id="inp1" v-model="name" :placeholder="`${$t('main.sections.s4.form.name')}`">
                                 </div>
                                 <div class="p50">
+                                    <label for="inp1">{{ $t('main.sections.s4.form.surname') }}</label>
+                                    <input type="text" id="inp1" v-model="name" :placeholder="`${$t('main.sections.s4.form.surname')}`">
+                                </div>
+                                <div class="p50">
                                     <label for="inp2">{{ $t('main.sections.s4.form.email') }}</label>
                                     <input type="email" id="inp2" v-model="email" :placeholder="`${$t('main.sections.s4.form.email')}`">
                                 </div>
@@ -110,7 +114,26 @@
                         </div>
                     </div>
                     <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.9185124463!2d2.347035!3d48.85885484999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2zUGFyecW8LCBGcmFuY2ph!5e0!3m2!1spl!2spl!4v1673031091660!5m2!1spl!2spl" title="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.76457551747!2d2.2769955921557585!3d48.858946580659975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2spl!4v1674766664032!5m2!1sfr!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-sec">
+                <div class="top">
+                    <p class="title">{{ $t("main.sections.s5.title") }}</p>
+                </div>
+                <div class="contact-div">
+                    <div>
+                        <span class="icon">
+                            <font-awesome-icon icon="fa-solid fa-phone" class="fa-solid"/>
+                        </span>
+                        <p>+33 6 38 61 77 95</p>
+                    </div>
+                    <div>
+                        <span class="icon">
+                            <font-awesome-icon icon="fa-solid fa-envelope" />
+                        </span>
+                        <p>contact@kpbat.com</p>
                     </div>
                 </div>
             </section>
