@@ -307,7 +307,6 @@ main {
 				margin: auto;
 				position: relative;
 				top: 180px;
-
 				.contact-wrap {
 					flex: 3;
 
@@ -440,20 +439,31 @@ main {
 			}
 		}
 		&.contact-sec {
+			min-height: calc(50vh - @navHeight);
 			display: flex;
+			margin: auto;
 			.contact-div {
-				border-radius: 4px;
-				background-color: @dark;
-				color: @light;
-				width: 30%;
-				top: 130px;
+				color: @dark;
+				width: 40%;
 				display: flex;
 				margin: auto;
+				margin-top: 6.7rem;
 				div {
 					text-align: center;
-					background-color: @dark;
 					width: 100%;
 					border-radius: 5px;
+					margin-left: 20px;
+					margin-right: 20px;
+					//border: @dark solid 2px;
+					cursor: pointer;
+					transition: all 0.4s;
+					&:hover {
+						background-color: @dark;
+						color: @light;
+						hr {
+							color: @light;
+						}
+					}
 					.icon {
 						margin-top: 20px;
 						display: inline-block;
@@ -467,6 +477,20 @@ main {
 						line-height: 80px;
 						margin-left: 6px;
 						transition:all .25s;
+					}
+					p {
+						margin-top: 20px;
+						margin-bottom: 20px;
+						font-size: 20px;
+					}
+					hr {
+						margin-top: 20px;
+						width: 60%;
+						display: flex;
+						justify-content: center;
+						margin: auto ;
+						margin-top: 20px;
+						color: @dark;
 					}
 				}
 			}

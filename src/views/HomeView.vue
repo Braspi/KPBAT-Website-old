@@ -68,12 +68,12 @@
                         <p>{{ $t("main.sections.s3.imgs.img3") }}</p>
                     </div>
                 </div>
-                <div class="img">
+                <!-- <div class="img">
                     <img :src="require('../assets/img/services/4.jpg')" alt="">
                     <div class="button-content">
                         <p>{{ $t("main.sections.s3.imgs.img4") }}</p>
                     </div>
-                </div>
+                </div> -->
                 <router-link to="#" class="button">{{ $t("main.sections.s3.btn") }}</router-link>
               </div>
             </section>
@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="p50">
                                     <label for="inp1">{{ $t('main.sections.s4.form.surname') }}</label>
-                                    <input type="text" id="inp1" v-model="name" :placeholder="`${$t('main.sections.s4.form.surname')}`">
+                                    <input type="text" id="inp1" v-model="surname" :placeholder="`${$t('main.sections.s4.form.surname')}`">
                                 </div>
                                 <div class="p50">
                                     <label for="inp2">{{ $t('main.sections.s4.form.email') }}</label>
@@ -127,12 +127,14 @@
                         <span class="icon">
                             <font-awesome-icon icon="fa-solid fa-phone" class="fa-solid"/>
                         </span>
+                        <hr/>
                         <p>+33 6 38 61 77 95</p>
                     </div>
                     <div>
                         <span class="icon">
                             <font-awesome-icon icon="fa-solid fa-envelope" />
                         </span>
+                        <hr/>
                         <p>contact@kpbat.com</p>
                     </div>
                 </div>
