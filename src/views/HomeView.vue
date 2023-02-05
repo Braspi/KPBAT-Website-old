@@ -68,12 +68,6 @@
                         <p>{{ $t("main.sections.s3.imgs.img3") }}</p>
                     </div>
                 </div>
-                <!-- <div class="img">
-                    <img :src="require('../assets/img/services/4.jpg')" alt="">
-                    <div class="button-content">
-                        <p>{{ $t("main.sections.s3.imgs.img4") }}</p>
-                    </div>
-                </div> -->
                 <router-link to="#" class="button">{{ $t("main.sections.s3.btn") }}</router-link>
               </div>
             </section>
@@ -132,7 +126,7 @@
                     </div>
                     <div>
                         <span class="icon">
-                            <font-awesome-icon icon="fa-solid fa-envelope" />
+                            <font-awesome-icon icon="fa-solid fa-envelope" class="fa-solid"/>
                         </span>
                         <hr/>
                         <p>contact@kpbat.com</p>
@@ -193,4 +187,3 @@ export default {
 </script>
 <style scoped src="@/assets/style/views/home.less" lang="less">
 </style>
-1

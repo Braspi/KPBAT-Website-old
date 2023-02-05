@@ -448,13 +448,15 @@ main {
 				display: flex;
 				margin: auto;
 				margin-top: 6.7rem;
+				@media(max-width: @sizes[mobile]) {
+					width: 70%;
+				}
 				div {
 					text-align: center;
 					width: 100%;
 					border-radius: 5px;
 					margin-left: 20px;
 					margin-right: 20px;
-					//border: @dark solid 2px;
 					cursor: pointer;
 					transition: all 0.4s;
 					&:hover {
@@ -462,6 +464,17 @@ main {
 						color: @light;
 						hr {
 							color: @light;
+						}
+					}
+					@media(max-width: @sizes[mobile]) {
+						margin-bottom: 20px;
+						width: 220px;
+						&:hover {
+							background-color: @light;
+							color: @dark;
+							hr {
+								color: @dark;
+							}
 						}
 					}
 					.icon {
@@ -482,9 +495,16 @@ main {
 						margin-top: 20px;
 						margin-bottom: 20px;
 						font-size: 20px;
+						flex-wrap: wrap;
+						overflow-wrap: break-word;
+						margin-left: auto;
+						margin-right: auto;
+						@media(max-width: @sizes[mobile]) {
+							font-size: 18px;
+							inline-size: 100px;
+						}
 					}
 					hr {
-						margin-top: 20px;
 						width: 60%;
 						display: flex;
 						justify-content: center;

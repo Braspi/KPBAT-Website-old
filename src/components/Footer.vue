@@ -29,7 +29,7 @@
 		</div>
 
 		<div class="copyright">
-			<p>&copy; 2022 KP BAT. All Rights Reserved</p>
+			<p>&copy; {{ new Date().getFullYear() }} KP BAT. All Rights Reserved</p>
 			<p>Design and code - ycode.ovh</p>
 		</div>
 	</div>
