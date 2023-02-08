@@ -82,6 +82,10 @@ export default {
         }).catch((e) => {
             console.error(e);
         })
+      const nav = document.querySelector("div.nav div.burger div.inner");
+        if(!nav.classList.contains("hidden")) {
+          nav.classList.add("hidden");
+        }
     },
     updated() {
         this.items_to_show = (window.innerWidth/240).toFixed()

@@ -248,7 +248,7 @@ main {
 			}
 
 			.imgs {
-				width: 80%;
+				width: 70%;
 				margin: auto;
 				padding-bottom: 100px;
 				padding-top: 150px;
@@ -256,17 +256,16 @@ main {
 				flex-wrap: wrap;
 				justify-content: space-around;
 				position: relative;
-
 				.img {
 					width: 300px;
 					height: 500px;
 					position: relative;
 					cursor: pointer;
 					margin: 20px;
-
 					img {
 						width: 100%;
 						height: 100%;
+						border-radius: 7px;
 					}
 
 					@padding: 5px;
@@ -281,11 +280,18 @@ main {
 						padding: @padding;
 						width: calc(100% - (@padding * 2));
 						height: 75px;
-						background-color: rgba(0, 0, 0, 0.85);
-						p {
-							text-transform: uppercase;
-						}
+						background-color: rgba(0, 0, 0, 0.65);
+						border-radius: 0 0 7px 7px;
 					}
+					&:hover {
+						// box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.8);
+						transform: scale(0.95);
+
+						transition: transform .2s,
+						box-shadow .3s;
+					}
+					transition: transform .2s,
+					box-shadow .3s;
 				}
 			}
 		}
@@ -450,6 +456,7 @@ main {
 				margin-top: 6.7rem;
 				@media(max-width: @sizes[mobile]) {
 					width: 70%;
+					margin-top: 3.7rem;
 				}
 				div {
 					text-align: center;
