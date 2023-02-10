@@ -7,7 +7,7 @@ import GalleryPanelView from '@/views/panel/GalleryPanelView.vue';
 import CategoryPanelView from '@/views/panel/CategoryPanelView.vue';
 import StatsView from '@/views/panel/StatsView.vue';
 import UsersView from '@/views/panel/ManageUsersView.vue';
-import OurServicesView from '@/views/OurServicesView.vue';
+// import OurServicesView from '@/views/OurServicesView.vue';
 
 import GalleryView from '@/views/GalleryView.vue';
 
@@ -69,11 +69,11 @@ const routes = [
         name: 'panelLogin',
         component: PanelLoginView
     },
-    {
-        path: '/ourservices',
-        name: 'ourServices',
-        component: OurServicesView
-    },
+    // {
+    //     path: '/ourservices',
+    //     name: 'ourServices',
+    //     component: OurServicesView
+    // },
 ]
 
 const router = createRouter({
