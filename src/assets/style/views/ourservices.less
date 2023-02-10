@@ -1,0 +1,38 @@
+@import "../global.less";
+
+.top {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 90%;
+  z-index: 20;
+
+  .title {
+    font-weight: 300;
+    font-size: 3em;
+    word-break: normal;
+
+    @media (max-width: @sizes[tablet]) {
+      font-size: 2em;
+    }
+    @media (max-width: @sizes[mobile]) {
+      font-size: 1.5em;
+    }
+  }
+  .desc {
+    font-weight: 400;
+    font-size: 1.7em;
+    word-break: normal;
+
+    @media (max-width: @sizes[tablet]) {
+      font-size: 1em;
+      white-space: unset;
+    }
+    @media (max-width: @sizes[mobile]) {
+      font-size: 0.85em;
+    }
+
+  }
+}
