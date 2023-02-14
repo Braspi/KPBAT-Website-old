@@ -167,7 +167,7 @@ export default {
             })
         },
         slideTo(val) {
-           this.currentSlide = val
+           this.currentSlide = val;
         },
     },
     components: {
@@ -179,5 +179,11 @@ export default {
 }
 
 </script>
+<style scoped>
+.bg {
+  background-size: cover;
+  background-position: center;
+}
+</style>
 <style scoped src="@/assets/style/views/home.less" lang="less">
 </style>
