@@ -69,11 +69,11 @@ const routes = [
         name: 'panelLogin',
         component: PanelLoginView
     },
-    // {
-    //     path: '/ourservices',
-    //     name: 'ourServices',
-    //     component: OurServicesView
-    // },
+    {
+        path: '/ourservices',
+        name: 'ourServices',
+        component: OurServicesView
+    },
 ]
 
 const router = createRouter({

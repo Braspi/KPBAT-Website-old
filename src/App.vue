@@ -4,6 +4,16 @@
 </template>
 
 <script>
+import { createApp } from 'vue'
+import App from './App.vue'
+
+// importing AOS css style globally
+import 'aos/dist/aos.css'
+
+const app = createApp(App);
+
+app.mount('#app')
+
 import Nav from '@/components/Nav.vue';
 export default {
   name: 'App',

@@ -50,23 +50,20 @@
                 <p class="desc">{{ $t("main.sections.s3.desc") }}</p>
               </div>
               <div class="imgs">
-                <div class="img">
-                    <img :src="require('../assets/img/services/1.jpg')" alt="">
-                    <div class="button-content">
+                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/1.jpg')}) !important`">
+                    <div class="button-content btn-hover">
                         <p>{{ $t("main.sections.s3.imgs.img1") }}</p>
                     </div>
                 </div>
-                <div class="img">
-                    <img :src="require('../assets/img/services/2.jpg')" alt="">
-                    <div class="button-content">
-                        <p>{{ $t("main.sections.s3.imgs.img2") }}</p>
-                    </div>
+                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/2.jpg')}) !important`">
+                  <div class="button-content">
+                    <p>{{ $t("main.sections.s3.imgs.img1") }}</p>
+                  </div>
                 </div>
-                <div class="img">
-                    <img :src="require('../assets/img/services/3.jpg')" alt="">
-                    <div class="button-content">
-                        <p>{{ $t("main.sections.s3.imgs.img3") }}</p>
-                    </div>
+                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/3.jpg')}) !important`">
+                  <div class="button-content">
+                    <p>{{ $t("main.sections.s3.imgs.img1") }}</p>
+                  </div>
                 </div>
                 <router-link to="#" class="button">{{ $t("main.sections.s3.btn") }}</router-link>
               </div>
@@ -113,9 +110,6 @@
                 </div>
             </section>
             <section class="contact-sec">
-                <div class="top">
-                    <p class="title">{{ $t("main.sections.s5.title") }}</p>
-                </div>
                 <div class="contact-div">
                     <div>
                         <span class="icon">
