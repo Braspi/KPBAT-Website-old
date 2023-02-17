@@ -9,7 +9,7 @@
 				<template v-for="i in 4" :key="i">
 					<div class="images__column">
 						<template v-for="image in images[i-1]" :key="image.id">
-							<a href="_" target="_blank" class="images__link">
+							<a target="_blank" class="images__link">
 								<figure class="images__thumb">
 									<img :src="image.href" alt="Copyright kpbat.com" class="images__image">
 									<figcaption class="images__caption">Copyright kpbat.com</figcaption>
