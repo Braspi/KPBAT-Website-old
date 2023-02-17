@@ -42,7 +42,9 @@
                     "phone": "Phone",
                     "message": "Message",
                     "title": "Contact Us",
-                    "submit": "Submit"
+                    "submit": "Submit",
+                    "privacy": "By checking this box, you agree to our",
+                    "privacy2": "privacy policy"
                 }
             }
         }
