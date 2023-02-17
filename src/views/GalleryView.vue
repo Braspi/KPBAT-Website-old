@@ -11,8 +11,8 @@
 						<template v-for="image in images[i-1]" :key="image.id">
 							<a href="_" target="_blank" class="images__link">
 								<figure class="images__thumb">
-									<img :src="image.href" alt="Coppy right strajk galery Bby Barspi" class="images__image">
-									<figcaption class="images__caption">Coppy right strajk galery Bby Barspi</figcaption>
+									<img :src="image.href" alt="Copyright kpbat.com" class="images__image">
+									<figcaption class="images__caption">Copyright kpbat.com</figcaption>
 								</figure>
 							</a>
 						</template>
