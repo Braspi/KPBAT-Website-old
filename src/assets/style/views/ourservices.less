@@ -2,13 +2,11 @@
 
 .top {
   position: absolute;
-  top: 20px;
+  top: 130px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  width: 90%;
   z-index: 20;
-
   .title {
     font-weight: 300;
     font-size: 3em;
@@ -35,4 +33,77 @@
     }
 
   }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  "box1 box2 box3"
+  "box1 box2 box3"
+  "box4 box5 box6"
+  "box7 box8 box9";
+}
+
+.box1 { grid-area: box1; }
+.box2 { grid-area: box2; }
+.box3 { grid-area: box3; }
+.box4 { grid-area: box4; }
+.box5 { grid-area: box5; }
+.box6 { grid-area: box6; }
+.box7 { grid-area: box7; }
+.box8 { grid-area: box8; }
+.box9 { grid-area: box9; }
+
+  .service-wrap {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+    position: relative;
+    .service-icon {
+      position: relative;
+      i {
+        font-size: 40px;
+        color: #e8bc00;
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+    }
+  }
+  .service-wrap:hover {
+    background-image: url(https://i.ibb.co/mykzQks/services1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+  }
+
+  .service-wrap:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+  }
+
+.service-wrap:hover h4,.service-wrap:hover p{
+  color: #fff;
+}
+.service-wrap h4 {
+  font-weight: 600;
+  color: #1e2331;
+  margin-bottom: 17px;
+  font-size: 18px;
+  text-transform: capitalize;
+  position: relative;
+}
+.service-wrap a {
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
 }

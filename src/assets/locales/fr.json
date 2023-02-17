@@ -42,7 +42,9 @@
                     "phone": "Téléphone",
                     "message": "Message",
                     "title": "Nom",
-                    "submit": "Envoyer"
+                    "submit": "Envoyer",
+                    "privacy": "En cochant cette case, vous acceptez notre",
+                    "privacy2": "politique de confidentialité"
                 }
             }
         }

@@ -57,12 +57,12 @@
                 </div>
                 <div class="img bg" :style="`background-image: url(${require('../assets/img/services/2.jpg')}) !important`">
                   <div class="button-content">
-                    <p>{{ $t("main.sections.s3.imgs.img1") }}</p>
+                    <p>{{ $t("main.sections.s3.imgs.img2") }}</p>
                   </div>
                 </div>
                 <div class="img bg" :style="`background-image: url(${require('../assets/img/services/3.jpg')}) !important`">
                   <div class="button-content">
-                    <p>{{ $t("main.sections.s3.imgs.img1") }}</p>
+                    <p>{{ $t("main.sections.s3.imgs.img3") }}</p>
                   </div>
                 </div>
                 <router-link to="#" class="button">{{ $t("main.sections.s3.btn") }}</router-link>
@@ -98,6 +98,11 @@
                                     <label for="inp4">{{ $t('main.sections.s4.form.message') }}</label>
                                     <textarea id="inp4"  v-model="message" :placeholder="`${$t('main.sections.s4.form.message')}`"></textarea>
                                 </div>
+                                <div class="p100 priv">
+                                  <input type="checkbox" required>
+                                  <label>{{ $t('main.sections.s4.form.privacy') }}</label>
+                                  <router-link to="#"> {{ $t('main.sections.s4.form.privacy2') }} </router-link>
+                                </div>
                                 <div class="p10">
                                     <button>{{ $t('main.sections.s4.form.submit') }}</button>
                                 </div>
@@ -123,7 +128,7 @@
                             <font-awesome-icon icon="fa-solid fa-envelope" class="fa-solid"/>
                         </span>
                         <hr/>
-                        <p>contact@kpbat.com</p>
+                        <p>k.p.batiment@gmail.com</p>
                     </div>
                 </div>
             </section>
@@ -137,6 +142,7 @@ import Footer from "@/components/Footer";
 
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
+import InputElement from "@/components/InputElement.vue";
 
 export default {
     data() {
@@ -171,6 +177,7 @@ export default {
         },
     },
     components: {
+      InputElement,
         Footer,
         Carousel,
         Slide,
