@@ -18,7 +18,7 @@
             },
             "s2": {
                 "title": "Our lastest work",
-                "desc": "Browse our gallery for ideas and tips, and see why we're worthy of your trust",
+                "desc": "Browse our gallery, and see why we're worthy of your trust!",
                 "btn": "Check All"
             },
             "s3": {
@@ -46,6 +46,48 @@
                     "privacy": "By checking this box, you agree to our",
                     "privacy2": "privacy policy"
                 }
+            }
+        }
+    },
+    "ourservices":{
+        "title": "Nos services",
+        "desc": "Nous fournissons des services et des produits qui établissent des normes élevées de qualité, de fiabilité et de durabilité.",
+        "services": {
+            "s1": {
+                "title": "Exterior Renovation",
+                "desc": ""
+            },
+            "s2": {
+                "title": "Interior renovation",
+                "desc": ""
+            },
+            "s3": {
+                "title": "Energy Renovation",
+                "desc": ""
+            },
+            "s4": {
+                "title": "Masonry",
+                "desc": ""
+            },
+            "s5": {
+                "title": "Plumbing/Heating",
+                "desc": ""
+            },
+            "s6": {
+                "title": "Interior/Exterior Insulation",
+                "desc": ""
+            },
+            "s7": {
+                "title": "Flooring",
+                "desc": ""
+            },
+            "s8": {
+                "title": "Plastering",
+                "desc": ""
+            },
+            "s9": {
+                "title": "Paint",
+                "desc": ""
             }
         }
     },

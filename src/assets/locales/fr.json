@@ -49,6 +49,48 @@
             }
         }
     },
+    "ourservices":{
+        "title": "Nos services",
+        "desc": "Nous fournissons des services et des produits qui établissent des normes élevées de qualité, de fiabilité et de durabilité.",
+        "services": {
+            "s1": {
+                "title": "Rénovation Extérieur",
+                "desc": ""
+            },
+            "s2": {
+                "title": "Rénovation Intérieur",
+                "desc": ""
+            },
+            "s3": {
+                "title": "Rénovation Énergétique",
+                "desc": ""
+            },
+            "s4": {
+                "title": "Maçonnerie",
+                "desc": ""
+            },
+            "s5": {
+                "title": "Plomberie/Chauffage",
+                "desc": ""
+            },
+            "s6": {
+                "title": "Isolation intérieure/Extérieure",
+                "desc": ""
+            },
+            "s7": {
+                "title": "Revêtement de sol",
+                "desc": ""
+            },
+            "s8": {
+                "title": "Plâtrerie",
+                "desc": ""
+            },
+            "s9": {
+                "title": "Peinture",
+                "desc": ""
+            }
+        }
+    },
     "footer": {
         "home" : "Accueli",
         "gallery": "Galerie",

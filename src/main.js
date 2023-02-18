@@ -11,7 +11,7 @@ import { library } from '@fortawesome/fontawesome-svg-core' /* import the fontaw
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome' /* import font awesome icon component */
 
 /* import specific icons */
-import { faBars, faX, faPhone, faEnvelope, faExclamation, faInfo } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faX, faPhone, faEnvelope, faExclamation, faInfo, faHouse, faDungeon, faToolbox, faVestPatches, faWrench, faSnowflake, faHammer, faTrowel, faPaintRoller } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons';
 import {  } from '@fortawesome/free-regular-svg-icons';
 
@@ -21,7 +21,7 @@ axios.defaults.headers.Authorization = `Baerer ${localStorage.accessToken}`
 /* You must provide every one imported icon */
 library.add(
     // solid
-    faBars, faX, faPhone, faEnvelope, faExclamation, faInfo,
+    faBars, faX, faPhone, faEnvelope, faExclamation, faInfo, faHouse, faDungeon, faToolbox, faVestPatches, faWrench, faSnowflake, faHammer, faTrowel, faPaintRoller,
     // brands
     faFacebook, faTwitter, faInstagram, faPinterest
     // regular
