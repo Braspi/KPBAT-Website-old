@@ -21,11 +21,16 @@
 
 		<div class="contact">
 			<p class="number">+33 6 38 61 77 95</p>
-			<p class="mail">support@kpbat.fr</p>
+			<p class="mail">k.p.batiment@gmail.com</p>
+			<div class="next-con">
+				<p class="adress">SASU KP BAT - 85 Boulevard du Général Leclerc, 92000 Nanterre, France</p>
+				<p class="nip">SIREN - 898 355 763</p>
+			</div>
 		</div>
 
 		<div class="copyright">
-			<p>&copy; 2022 KP BAT. All Rights Reserved</p>
+			<p>&copy; {{ new Date().getFullYear() }} KP BAT. All Rights Reserved</p>
+			<p>Design and code - ycode.ovh</p>
 		</div>
 	</div>
 </template>

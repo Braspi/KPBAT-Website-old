@@ -1,9 +1,11 @@
 <template lang="html">
-  <div class="nav">
-    <img src="@/assets/icon/logo/LOGO3.jpg" alt="logo" class="logo">
+  <div class="nav" :class="{ bg: !navDetached }" >
+    <router-link to="/">
+      <img src="@/assets/icon/logo/LOGO1_alpha.png" alt="logo" class="logo">
+    </router-link>
     <div class="links">
+      <a href="/#" class="hua">{{ $t("nav.home") }}</a>
       <router-link to="/gallery" class="hua">{{ $t("nav.gallery") }}</router-link>
-      <router-link to="/" class="hua">{{ $t("nav.home") }}</router-link>
       <a href="/#contact" class="hua">{{ $t("nav.contact") }}</a>
     </div>
     <div class="lang">
@@ -16,8 +18,8 @@
     <div class="burger">
       <div class="inner" :class="[hidden ? 'hidden' : '']">
         <div class="links">
+          <a href="/" class="hua">{{ $t("nav.home") }}</a>
           <router-link to="/gallery" class="hua">{{ $t("nav.gallery") }}</router-link>
-          <router-link to="/" class="hua">{{ $t("nav.home") }}</router-link>
           <a href="/#contact" class="hua">{{ $t("nav.contact") }}</a>
         </div>
         <h1>{{ $t("nav.language") }}:</h1>
@@ -35,7 +37,14 @@ export default {
   data() {
     return {
       hidden: true,
+      navDetached: true,
     }
+  },
+  created() {
+      window.addEventListener('scroll', this.onScroll)
+  },
+  beforeUnmount() {
+      window.removeEventListener('scroll', this.onScroll)
   },
   methods: {
     changeLang(lang) {
@@ -43,6 +52,10 @@ export default {
     },
     showNav() {
       this.hidden = !this.hidden;
+    },
+    onScroll() {
+      let header = document.querySelector('.home main').getBoundingClientRect();
+      this.navDetached = window.pageYOffset < (header.height / 8)
     }
   }
 }

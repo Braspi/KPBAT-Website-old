@@ -1,1 +1,90 @@
 @import '../../global.less';
+
+section {
+	width: 90%;
+	min-height: 49px;
+	margin: auto;
+	color: white;
+	display: flex;
+
+	::selection {
+		background-color: #fff;
+		color: #000;
+	}
+
+	> div {
+		position: relative;
+		background-color: @dark;
+		border-radius: 10px;
+		margin: 40px 20px;
+		padding: 20px;
+
+		&.categories {
+			flex: 3;
+
+			.container {
+				width: 98%;
+				height: 98%;
+				margin: auto;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+
+				a {
+					width: 200px;
+					height: 200px;
+					margin-left: 10px;
+					margin-right: 10px;
+					border-radius: 10px;
+					background-color: #fff;
+					color: @light;
+					user-select: none;
+					position: relative;
+					cursor: pointer;
+					display: block;
+					text-decoration: none;
+
+					p {
+						z-index: 11;
+						position: relative;
+						text-align: center;
+
+						@margin: 10px;
+
+						margin-top: @margin;
+						margin-bottom: @margin;
+					}
+					img {
+						z-index: 1;
+						position: absolute;
+						top: 0;
+						left: 0;
+						filter: brightness(0.4);
+						width: 100%;
+						height: 100%;
+						border-radius: 10px;
+					}
+
+					&:hover {
+						box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.8);
+						transform: translate(-2px, -4px);
+
+						transition: transform .2s, 
+									box-shadow .3s;
+					}
+					transition: transform .2s, 
+								box-shadow .3s;
+				}
+			}
+		}
+		&.create {
+			flex: 1;
+
+			> div {
+				width: 200px;
+			}
+		}
+	}
+}

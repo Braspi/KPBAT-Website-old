@@ -20,8 +20,9 @@
 @light: #D8D8D8;
 @dark: #2A2A2A;
 @hoverColor: #5f5f5f;
-@navHeight: 100px;
-@footerHeight: 330px;
+@hoverColorDark: #999999;
+@navHeight: 120px;
+@footerHeight: 310px;
 @darkAlpha: #2A2A2A91;
 @sidebarWidth: 250px;
 
@@ -29,9 +30,8 @@
 .home {
 	background-color: @light;
 	width: 100%;
-	min-height: calc(100vh - @navHeight);
+	height: 101vh;
 	color: @dark;
-	margin-top: @navHeight;
 	position: relative;
 }
 
@@ -59,18 +59,25 @@
 	}
 }
 
+.gallery {
+	margin-top: @navHeight;
+	background-color: @light;
+	width: 100%;
+	min-height: calc(100vh - @navHeight);
+	color: @dark;
+	position: relative;
+}
+
+
 // Components
 .nav {
 	width: 100%;
 	height: @navHeight;
-	background-color: @dark;
-	// Raczej nie zadziała
-	// background-color: inherit;
-	color: @light;
-	// position: relative;
+	color: @dark;
 	position: fixed;
 	top: 0;
 	z-index: 10000;
+	transition: background-color .5s;
 }
 
 .footer{
@@ -79,22 +86,23 @@
 	height: @footerHeight;
 	color: @light;
 	position: relative;
-		@media(max-width: @sizes[desktop]) {
-			height: @footerHeight - 100px;
-		}
-		@media(max-width: @sizes[tablet]) {
-			height: @footerHeight - 140px;
-		}
-		@media(max-width: @sizes[mobile]) {
-			height: 500px;
-		}
+
+	@media(max-width: @sizes[desktop]) {
+		height: @footerHeight - 100px;
+	}
+	@media(max-width: @sizes[tablet]) {
+		height: @footerHeight - 140px;
+	}
+	@media(max-width: @sizes[mobile]) {
+		height: 500px;
+	}
 }
 
 .sidebar {
 	width: @sidebarWidth;
 	height: calc(100vh - @navHeight);
 	background-color: @dark;
-	position: relative;
+	position: fixed;
 }
 
 // Global

@@ -1,7 +1,7 @@
 {
     "nav": {
         "gallery": "Galerie",
-        "home" : "Maison",
+        "home" : "Accueil",
         "contact" : "Contact",
         "language": "Choisissez la langue"
     },
@@ -11,38 +11,90 @@
         "sections": {
             "s1": {
                 "name": "Qui sommes nous?",
-                "title": "Contrary to popular? Belief, Lorem Ipsum is lorem",
-                "line1": "KP BAT s'occupe de la mise en œuvre complète des projets, en essayant d'accompagner les clients à chaque étape des travaux. Au travail, le plus important pour nous est de répondre aux attentes des investisseurs, tout en veillant au fonctionnalisme, au confort et à l'esthétique de l'espace.",
+                "title": "KP BAT s'occupe de la mise en œuvre complète des projets.",
+                "line1": "En essayant d'accompagner les clients à chaque étape des travaux. Au travail, le plus important pour nous est de répondre aux attentes des investisseurs, tout en veillant au fonctionnalisme, au confort et à l'esthétique de l'espace.",
                 "line2": "Nous sommes spécialisés dans la rénovation d’appartements, maisons, bureaux et commerces.",
                 "line3": "N’hésitez pas, écrivez ou appelez. Nous garantissons votre satisfaction et une approche individuelle de votre projet."
             },
             "s2": {
-                "title": "Notre dernière réalisation",
-                "desc": "Parcourez notre galerie d'idées et de conseils, et voyez pourquoi nous méritons votre confiance",
+                "title": "Découvrez nos dernières réalisations!",
+                "desc": "Parcourez notre galerie et voyez pourquoi nous méritons votre confiance",
                 "btn": "Vérifie tout"
             },
             "s3": {
-                "title": "Prenez contact avec nous",
-                "desc": "Si vous avez un problème, écrivez-nous!",
-                "form": {
-                    "name": "Nom",
-                    "email": "E-mail",
-                    "phone": "Téléphoner",
-                    "message": "Message",
-                    "submit": "Soumettre"
+                "title": "Nos services",
+                "desc": "Nous fournissons des services et des produits qui établissent des normes élevées de qualité, de fiabilité et de durabilité.",
+                "btn": "Apprendre encore plus",
+                "imgs": {
+                    "img1": "Rénovation Extérieur",
+                    "img2": "Rénovation Intérieur",
+                    "img3": "Rénovation Énergétique",
+                    "img4": "Maçonnerie"
                 }
             },
             "s4": {
-                "title": "Nos services",
-                "desc": "Nous fournissons des services et des produits qui établissent des normes élevées de qualité, de fiabilité et de durabilité.",
-                "btn": "Apprendre encore plus"
+                "title": "Envoyez-nous un message",
+                "desc": "Si vous avez un problème, écrivez-nous!",
+                "form": {
+                    "name": "Prénom",
+                    "surname": "Nom",
+                    "email": "E-mail",
+                    "phone": "Téléphone",
+                    "message": "Message",
+                    "title": "Nom",
+                    "submit": "Envoyer",
+                    "privacy": "En cochant cette case, vous acceptez notre",
+                    "privacy2": "politique de confidentialité"
+                }
+            }
+        }
+    },
+    "ourservices":{
+        "title": "Nos services",
+        "desc": "Nous fournissons des services et des produits qui établissent des normes élevées de qualité, de fiabilité et de durabilité.",
+        "services": {
+            "s1": {
+                "title": "Rénovation Extérieur",
+                "desc": ""
+            },
+            "s2": {
+                "title": "Rénovation Intérieur",
+                "desc": ""
+            },
+            "s3": {
+                "title": "Rénovation Énergétique",
+                "desc": ""
+            },
+            "s4": {
+                "title": "Maçonnerie",
+                "desc": ""
+            },
+            "s5": {
+                "title": "Plomberie/Chauffage",
+                "desc": ""
+            },
+            "s6": {
+                "title": "Isolation intérieure/Extérieure",
+                "desc": ""
+            },
+            "s7": {
+                "title": "Revêtement de sol",
+                "desc": ""
+            },
+            "s8": {
+                "title": "Plâtrerie",
+                "desc": ""
+            },
+            "s9": {
+                "title": "Peinture",
+                "desc": ""
             }
         }
     },
     "footer": {
-        "home" : "Maison",
+        "home" : "Accueli",
         "gallery": "Galerie",
         "contact" : "Contact",
         "how-works" : "durant les travaux"
-    }
+   }
 }

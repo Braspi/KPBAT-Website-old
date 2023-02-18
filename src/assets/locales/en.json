@@ -11,31 +11,83 @@
         "sections": {
             "s1": {
                 "name": "Who are we?",
-                "title": "Contrary to popular? Belief, Lorem Ipsum is lorem",
-                "line1": "KP BAT deals with the complete implementation of projects, trying to support customers at every stage of the work. At work, the most important thing for us is to meet the expectations of investors, while ensuring the functionality, comfort and aesthetics of the space.",
+                "title": "KP BAT deals with the complete implementation of projects.",
+                "line1": "Trying to support customers at every stage of the work. At work, the most important thing for us is to meet the expectations of investors, while ensuring the functionality, comfort and aesthetics of the space.",
                 "line2": "We specialize in the renovation of apartments, houses, offices and businesses.",
                 "line3": "Do not hesitate, write or call. We guarantee your satisfaction and an individual approach to your project."
             },
             "s2": {
                 "title": "Our lastest work",
-                "desc": "Browse our gallery for ideas and tips, and see why we're worthy of your trust",
+                "desc": "Browse our gallery, and see why we're worthy of your trust!",
                 "btn": "Check All"
             },
             "s3": {
+                "title": "Our Services",
+                "desc": "We provide services and products that set high standards for quality, reliability, durability.",
+                "btn": "Learn More",
+                "imgs": {
+                    "img1": "Exterior Renovation",
+                    "img2": "Interior Renovation",
+                    "img3": "Energy Renovation",
+                    "img4": "Masonry"
+                }
+            },
+            "s4": {
                 "title": "Get in Touch with Us",
                 "desc": "If you have any problem please write us!",
                 "form": {
                     "name": "Name",
+                    "surname": "Surname",
                     "email": "Email",
                     "phone": "Phone",
                     "message": "Message",
-                    "submit": "Submit"
+                    "title": "Contact Us",
+                    "submit": "Submit",
+                    "privacy": "By checking this box, you agree to our",
+                    "privacy2": "privacy policy"
                 }
+            }
+        }
+    },
+    "ourservices":{
+        "title": "Nos services",
+        "desc": "Nous fournissons des services et des produits qui établissent des normes élevées de qualité, de fiabilité et de durabilité.",
+        "services": {
+            "s1": {
+                "title": "Exterior Renovation",
+                "desc": ""
+            },
+            "s2": {
+                "title": "Interior renovation",
+                "desc": ""
+            },
+            "s3": {
+                "title": "Energy Renovation",
+                "desc": ""
             },
             "s4": {
-                "title": "Our Services",
-                "desc": "We provide services and products that set high standards for quality, reliability, durability.",
-                "btn": "Learn More"
+                "title": "Masonry",
+                "desc": ""
+            },
+            "s5": {
+                "title": "Plumbing/Heating",
+                "desc": ""
+            },
+            "s6": {
+                "title": "Interior/Exterior Insulation",
+                "desc": ""
+            },
+            "s7": {
+                "title": "Flooring",
+                "desc": ""
+            },
+            "s8": {
+                "title": "Plastering",
+                "desc": ""
+            },
+            "s9": {
+                "title": "Paint",
+                "desc": ""
             }
         }
     },
