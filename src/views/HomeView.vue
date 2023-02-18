@@ -50,22 +50,28 @@
                 <p class="desc">{{ $t("main.sections.s3.desc") }}</p>
               </div>
               <div class="imgs">
+                <router-link to="/ourservices" @click="scrollToTop">
                 <div class="img bg" :style="`background-image: url(${require('../assets/img/services/1.jpg')}) !important`">
                     <div class="button-content btn-hover">
                         <p>{{ $t("main.sections.s3.imgs.img1") }}</p>
                     </div>
                 </div>
+                </router-link>
+                <router-link to="/ourservices" @click="scrollToTop">
                 <div class="img bg" :style="`background-image: url(${require('../assets/img/services/2.jpg')}) !important`">
                   <div class="button-content">
                     <p>{{ $t("main.sections.s3.imgs.img2") }}</p>
                   </div>
                 </div>
+                </router-link>
+                <router-link to="/ourservices" @click="scrollToTop">
                 <div class="img bg" :style="`background-image: url(${require('../assets/img/services/3.jpg')}) !important`">
                   <div class="button-content">
                     <p>{{ $t("main.sections.s3.imgs.img3") }}</p>
                   </div>
                 </div>
-                <router-link to="#" class="button">{{ $t("main.sections.s3.btn") }}</router-link>
+                </router-link>
+                <router-link to="/ourservices" class="button" @click="scrollToTop">{{ $t("main.sections.s3.btn") }}</router-link>
               </div>
             </section>
             <section class="form" id="contact">
@@ -175,6 +181,9 @@ export default {
         slideTo(val) {
            this.currentSlide = val;
         },
+      scrollToTop() {
+        window.scrollTo(0,0);
+      }
     },
     components: {
       InputElement,
