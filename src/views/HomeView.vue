@@ -1,8 +1,8 @@
 <template lang="html">
     <div class="home">
         <main>
-            <Carousel 
-            :autoplay="2000"
+            <Carousel
+            :autoplay="5000"
             :wrap-around="true"
             :mouseDrag="false"
             :transition="1000"
@@ -11,8 +11,10 @@
                     <img class="carousel__item" :src="img" alt="">
                 </Slide>
             </Carousel>
+
             <p class="title">{{ $t("main.title") }}</p>
             <p class="desc">{{ $t("main.desc") }}</p>
+          <div class="scroll-down"></div>
         </main>
         <div class="wrapper">
             <section class="about invert">
@@ -138,6 +140,9 @@
                     </div>
                 </div>
             </section>
+<!--            <section class="contactv2 invert">-->
+<!--                <div></div>-->
+<!--            </section>-->
           <Footer/>
         </div>
     </div>
