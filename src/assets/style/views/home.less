@@ -119,12 +119,12 @@ main {
 		&.about {
 
 			@media (max-width: @sizes[tablet]) {
-				min-height: 130vh;
+				min-height: 120vh;
 			}
 
 			.left {
 				position: absolute;
-				width: 40%;
+				width: 45%;
 				top: 50%;
 				transform: translateY(-50%);
 				margin-left: 10%;
@@ -153,11 +153,18 @@ main {
 				.title {
 					font-style: normal;
 					font-weight: 700;
-					font-size: 2em;
-					margin-bottom: 40px;
+					font-size: 3em;
+					margin-bottom: 30px;
 
 					@media (max-width: @sizes[tablet]) {
 						font-size: 1.8em;
+					}
+				}
+				.desc{
+					font-weight: 400;
+					font-size: 1.3rem;
+					@media (max-width: @sizes[tablet]) {
+						font-size: 1.2em;
 					}
 				}
 			}
@@ -515,7 +522,7 @@ main {
 			}
 		}
 		&.contact-sec {
-			min-height: calc(50vh - @navHeight);
+			min-height: calc(45vh - @navHeight);
 			display: flex;
 			margin: auto;
 			.contact-div {

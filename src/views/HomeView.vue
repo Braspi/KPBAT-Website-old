@@ -1,22 +1,24 @@
 <template lang="html">
     <div class="home">
         <main>
-            <Carousel
-            :autoplay="5000"
-            :wrap-around="true"
-            :mouseDrag="false"
-            :transition="1000"
-            >
-                <Slide v-for="(img, i) in images" :key="i">
-                    <img class="carousel__item" :src="img" alt="">
-                </Slide>
-            </Carousel>
-
+<!--            <Carousel-->
+<!--            :autoplay="5000"-->
+<!--            :wrap-around="true"-->
+<!--            :mouseDrag="false"-->
+<!--            :transition="1000"-->
+<!--            >-->
+<!--                <Slide v-for="(img, i) in images" :key="i">-->
+<!--                    <img class="carousel__item" :src="img" alt="">-->
+<!--                </Slide>-->
+<!--            </Carousel>-->
+            <img src="../assets/img/carousel/1.jpg" alt="">
             <p class="title">{{ $t("main.title") }}</p>
             <p class="desc">{{ $t("main.desc") }}</p>
-          <div class="scroll-down"></div>
+          <a href="#sec-hello">
+            <div class="scroll-down"></div>
+          </a>
         </main>
-        <div class="wrapper">
+        <div class="wrapper" id="sec-hello">
             <section class="about invert">
                 <div class="left">
                     <p class="name">{{ $t("main.sections.s1.name") }}</p>
@@ -109,7 +111,7 @@
                                 <div class="p100 priv">
                                   <input type="checkbox" required>
                                   <label>{{ $t('main.sections.s4.form.privacy') }}</label>
-                                  <router-link to="#"> {{ $t('main.sections.s4.form.privacy2') }} </router-link>
+                                      <a href="https://docs.google.com/document/d/1bnxOXVHx54XLblR6ZMMVRtHaewmt3CC4fmrkdvxEdEA/edit?usp=sharing">{{ $t('main.sections.s4.form.privacy2') }}</a>
                                 </div>
                                 <div class="p10">
                                     <button>{{ $t('main.sections.s4.form.submit') }}</button>
@@ -140,9 +142,6 @@
                     </div>
                 </div>
             </section>
-<!--            <section class="contactv2 invert">-->
-<!--                <div></div>-->
-<!--            </section>-->
           <Footer/>
         </div>
     </div>
@@ -186,9 +185,9 @@ export default {
         slideTo(val) {
            this.currentSlide = val;
         },
-      scrollToTop() {
+        scrollToTop() {
         window.scrollTo(0,0);
-      }
+        },
     },
     components: {
       InputElement,
