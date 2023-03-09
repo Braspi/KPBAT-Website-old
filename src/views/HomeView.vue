@@ -14,12 +14,12 @@
             <img src="../assets/img/carousel/1.jpg" alt="">
             <p class="title">{{ $t("main.title") }}</p>
             <p class="desc">{{ $t("main.desc") }}</p>
-          <a href="#sec-hello">
+          <button @click="scrollToBottom">
             <div class="scroll-down"></div>
-          </a>
+          </button>
         </main>
-        <div class="wrapper" id="sec-hello">
-            <section class="about invert">
+        <div class="wrapper" id="sechello">
+            <section class="about invert" ref="bottom">
                 <div class="left">
                     <p class="name">{{ $t("main.sections.s1.name") }}</p>
                     <p class="title">{{ $t("main.sections.s1.title") }}</p>
@@ -119,26 +119,22 @@
                             </form>
                         </div>
                     </div>
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.76457551747!2d2.2769955921557585!3d48.858946580659975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2spl!4v1674766664032!5m2!1sfr!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </section>
-            <section class="contact-sec">
-                <div class="contact-div">
-                    <div>
-                        <span class="icon">
-                            <font-awesome-icon icon="fa-solid fa-phone" class="fa-solid"/>
-                        </span>
-                        <hr/>
-                        <p>+33 6 38 61 77 95</p>
-                    </div>
-                    <div>
-                        <span class="icon">
-                            <font-awesome-icon icon="fa-solid fa-envelope" class="fa-solid"/>
-                        </span>
-                        <hr/>
-                        <p>k.p.batiment@gmail.com</p>
+                    <div class="data">
+                      <div class="data-info">
+                        <div class="data-sec">
+                          <h2>Contact Us</h2>
+                          <p></p>
+                          <div class="media telephone">
+                            <label><font-awesome-icon icon="fa-solid fa-phone" class="fa-solid"/></label>
+                            <p>+33 6 38 61 77 95</p>
+                          </div>
+                          <div class="media mail">
+                            <label><font-awesome-icon icon="fa-solid fa-envelope" class="fa-solid"/></label>
+                            <p>k.p.batiment@gmail.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.76457551747!2d2.2769955921557585!3d48.858946580659975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2spl!4v1674766664032!5m2!1sfr!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </section>
@@ -188,8 +184,11 @@ export default {
         scrollToTop() {
         window.scrollTo(0,0);
         },
-    },
-    components: {
+        scrollToBottom(){
+          this.$refs['bottom'].scrollIntoView({behavior: "smooth"})
+        }
+      },
+  components: {
       InputElement,
         Footer,
         Carousel,
