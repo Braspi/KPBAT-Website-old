@@ -31,7 +31,7 @@
                         {{ $t("main.sections.s1.line3") }}
                     </p>
                 </div>
-                <img :src="require('../assets/img/1.png')" alt="">
+                <img :src="require('../assets/img/1.webp')" alt="">
             </section>
             <section class="work">
                 <div class="top">
@@ -39,12 +39,12 @@
                     <p class="desc">{{ $t("main.sections.s2.desc") }}</p>
                 </div>
                 <div class="imgs">
-                    <img :src="require('../assets/img/gallery/1.jpg')" alt="">
-                    <img :src="require('../assets/img/gallery/2.jpg')" alt="">
-                    <img :src="require('../assets/img/gallery/3.jpg')" alt="">
-                    <img :src="require('../assets/img/gallery/4.jpg')" alt="">
-                    <img :src="require('../assets/img/gallery/5.jpg')" alt="">
-                    <img :src="require('../assets/img/gallery/6.jpg')" alt="">
+                    <img :src="require('../assets/img/gallery/1.webp')" alt="">
+                    <img :src="require('../assets/img/gallery/2.webp')" alt="">
+                    <img :src="require('../assets/img/gallery/3.webp')" alt="">
+                    <img :src="require('../assets/img/gallery/4.webp')" alt="">
+                    <img :src="require('../assets/img/gallery/5.webp')" alt="">
+                    <img :src="require('../assets/img/gallery/6.webp')" alt="">
                 </div>
                 <router-link to="/gallery" class="button">{{ $t("main.sections.s2.btn") }}</router-link>
             </section>
@@ -55,21 +55,21 @@
               </div>
               <div class="imgs">
                 <router-link to="/ourservices" @click="scrollToTop">
-                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/1.jpg')}) !important`">
+                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/1.webp')}) !important`">
                     <div class="button-content btn-hover">
                         <p>{{ $t("main.sections.s3.imgs.img1") }}</p>
                     </div>
                 </div>
                 </router-link>
                 <router-link to="/ourservices" @click="scrollToTop">
-                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/2.jpg')}) !important`">
+                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/2.webp')}) !important`">
                   <div class="button-content">
                     <p>{{ $t("main.sections.s3.imgs.img2") }}</p>
                   </div>
                 </div>
                 </router-link>
                 <router-link to="/ourservices" @click="scrollToTop">
-                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/3.jpg')}) !important`">
+                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/3.webp')}) !important`">
                   <div class="button-content">
                     <p>{{ $t("main.sections.s3.imgs.img3") }}</p>
                   </div>
@@ -157,10 +157,7 @@ export default {
         return {
             currentSlide: 0,
             images: [
-                require("../assets/img/carousel/1.jpg"),
-                require("../assets/img/carousel/2.jpg"),
-                require("../assets/img/carousel/3.jpg"),
-                require("../assets/img/carousel/4.jpg"),
+                require("../assets/img/carousel/1.webp"),
             ],
             name: "",
             email: "",
