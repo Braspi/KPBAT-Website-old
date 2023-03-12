@@ -11,7 +11,7 @@
 <!--                    <img class="carousel__item" :src="img" alt="">-->
 <!--                </Slide>-->
 <!--            </Carousel>-->
-            <img src="../assets/img/carousel/1.jpg" alt="">
+            <img src="" alt="">
             <p class="title">{{ $t("main.title") }}</p>
             <p class="desc">{{ $t("main.desc") }}</p>
           <button @click="scrollToBottom">
@@ -87,6 +87,7 @@
                     <div class="contact-wrap">
                         <div>
                             <h2>{{ $t('main.sections.s4.form.title') }}</h2>
+                            <p>{{ $t('main.sections.s4.form.desc')}}</p>
                             <form @submit.prevent="sendMail()">
                                 <div class="p50">
                                     <label for="inp1">{{ $t('main.sections.s4.form.name') }}</label>
@@ -122,18 +123,19 @@
                     <div class="data">
                       <div class="data-info">
                         <div class="data-sec">
-                          <h2>Contact Us</h2>
-                          <p></p>
+                          <h1>{{ $t('main.sections.s5.left.title')}}</h1>
+                          <p>{{ $t('main.sections.s5.left.desc')}}</p>
                           <div class="media telephone">
                             <label><font-awesome-icon icon="fa-solid fa-phone" class="fa-solid"/></label>
-                            <p>+33 6 38 61 77 95</p>
+                            <h2><p>contact telephone</p>+33 6 38 61 77 95</h2>
                           </div>
                           <div class="media mail">
                             <label><font-awesome-icon icon="fa-solid fa-envelope" class="fa-solid"/></label>
-                            <p>k.p.batiment@gmail.com</p>
+                            <h2><p>contact email</p>contact@kpbat.com</h2>
                           </div>
                         </div>
                       </div>
+                      <hr>
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.76457551747!2d2.2769955921557585!3d48.858946580659975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2spl!4v1674766664032!5m2!1sfr!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>

@@ -30,7 +30,7 @@
 
 		<div class="copyright">
 			<p>&copy; {{ new Date().getFullYear() }} KP BAT. All Rights Reserved</p>
-			<p>Design and code - ycode.ovh </p>
+			<p>Design and code - ycode.ovh</p>
 		</div>
 	</div>
 </template>

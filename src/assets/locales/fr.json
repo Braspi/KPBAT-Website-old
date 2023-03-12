@@ -37,14 +37,21 @@
                 "desc": "Si vous avez un problème, écrivez-nous!",
                 "form": {
                     "name": "Prénom",
-                    "surname": "Nom",
+                    "surname": "Contactez-nous",
                     "email": "E-mail",
                     "phone": "Téléphone",
                     "message": "Message",
-                    "title": "Nom",
+                    "title": "Contactez-nous",
+                    "desc": "Notre formulaire de contact",
                     "submit": "Envoyer",
                     "privacy": "En cochant cette case, vous acceptez notre",
                     "privacy2": "politique de confidentialité"
+                }
+            },
+            "s5": {
+                "left": {
+                    "title": "Contactez-nous",
+                    "desc": "Détails du contact"
                 }
             }
         }
@@ -94,7 +101,6 @@
     "footer": {
         "home" : "Accueli",
         "gallery": "Galerie",
-        "contact" : "Contact",
-        "how-works" : "durant les travaux"
+        "contact" : "Contact"
    }
 }

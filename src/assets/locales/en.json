@@ -42,9 +42,16 @@
                     "phone": "Phone",
                     "message": "Message",
                     "title": "Contact Us",
+                    "desc": "Our contact form",
                     "submit": "Submit",
                     "privacy": "By checking this box, you agree to our",
                     "privacy2": "privacy policy"
+                }
+            },
+            "s5": {
+                "left": {
+                    "title": "Contact details",
+                    "desc": "Our contact data"
                 }
             }
         }
@@ -94,7 +101,6 @@
     "footer": {
         "home" : "Home",
         "gallery": "Gallery",
-        "contact" : "Contact",
-        "how-works" : "How we work"
+        "contact" : "Contact"
     }
 }
