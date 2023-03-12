@@ -5,9 +5,8 @@
 		</router-link>
 
 		<div class="links">
-			<router-link to="/" class="hua">{{ $t("footer.home") }}</router-link>
+			<router-link to="#" class="hua"> {{ $t("footer.home") }}</router-link>
 			<router-link to="/gallery" class="hua">{{ $t("footer.gallery") }}</router-link>
-			<router-link to="#" class="hua">{{ $t("footer.how-works") }}</router-link>
 			<a href="/#contact" class="hua">{{ $t("footer.contact") }}</a>
 		</div>
 
@@ -21,7 +20,7 @@
 
 		<div class="contact">
 			<p class="number">+33 6 38 61 77 95</p>
-			<p class="mail">k.p.batiment@gmail.com</p>
+			<p class="mail">contact@kpbat.com</p>
 			<div class="next-con">
 				<p class="adress">SASU KP BAT - 85 Boulevard du Général Leclerc, 92000 Nanterre, France</p>
 				<p class="nip">SIREN - 898 355 763</p>
@@ -29,15 +28,20 @@
 		</div>
 
 		<div class="copyright">
-			<p>&copy; {{ new Date().getFullYear() }} KP BAT. All Rights Reserved</p>
-			<p>Design and code - ycode.ovh</p>
+			<p>&copy; 2022 - {{ new Date().getFullYear() }} KP BAT. All Rights Reserved</p>
+			<p>Design and code - <a href="https://ycode.ovh">ycode.ovh</a></p>
 		</div>
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'Footer'
+	name: 'Footer',
+  methods: {
+    scroll(){
+      this.$refs['contact'].scroll({behavior: "smooth"})
+    }
+  }
 }
 </script>
 
