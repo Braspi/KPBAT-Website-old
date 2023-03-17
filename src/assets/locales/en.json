@@ -37,7 +37,7 @@
                 "desc": "If you have any problem please write us!",
                 "form": {
                     "name": "Name",
-                    "surname": "Surname",
+                    "surname": "Last Name",
                     "email": "Email",
                     "phone": "Phone",
                     "message": "Message",

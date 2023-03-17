@@ -91,11 +91,11 @@
                             <form @submit.prevent="sendMail()">
                                 <div class="p50">
                                     <label for="inp1">{{ $t('main.sections.s4.form.name') }}</label>
-                                    <input type="text" id="inp1" v-model="name" :placeholder="`${$t('main.sections.s4.form.name')}`">
+                                    <input type="text" id="inp1" v-model="firstName" :placeholder="`${$t('main.sections.s4.form.name')}`">
                                 </div>
                                 <div class="p50">
                                     <label for="inp1">{{ $t('main.sections.s4.form.surname') }}</label>
-                                    <input type="text" id="inp1" v-model="surname" :placeholder="`${$t('main.sections.s4.form.surname')}`">
+                                    <input type="text" id="inp1" v-model="lastName" :placeholder="`${$t('main.sections.s4.form.surname')}`">
                                 </div>
                                 <div class="p50">
                                     <label for="inp2">{{ $t('main.sections.s4.form.email') }}</label>
@@ -103,7 +103,7 @@
                                 </div>
                                 <div class="p50">
                                     <label for="inp3">{{ $t('main.sections.s4.form.phone') }}</label>
-                                    <input type="text" id="inp3" v-model="phone" :placeholder="`${$t('main.sections.s4.form.phone')}`">
+                                    <input type="text" id="inp3" v-model="phoneNumber" :placeholder="`${$t('main.sections.s4.form.phone')}`">
                                 </div>
                                 <div class="p100">
                                     <label for="inp4">{{ $t('main.sections.s4.form.message') }}</label>
@@ -131,7 +131,7 @@
                           </div>
                           <div class="media mail">
                             <label><font-awesome-icon icon="fa-solid fa-envelope" class="fa-solid"/></label>
-                            <h2><p>contact email</p>contact@kpbat.com</h2>
+                            <h2><p>contact email</p>k.p.batiment@gmail.com</h2>
                           </div>
                         </div>
                       </div>
@@ -159,9 +159,10 @@ export default {
             images: [
                 require("../assets/img/carousel/1.webp"),
             ],
-            name: "",
+            firstName: "",
+            lastName: "",
             email: "",
-            phone: "",
+            phoneNumber: "",
             message: "",
         }
     },
