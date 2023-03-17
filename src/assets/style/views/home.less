@@ -306,7 +306,6 @@ main {
 				.img {
 					width: 346px;
 					height: 560px;
-					height: 650px;
 					position: relative;
 					cursor: pointer;
 					margin: 20px;
@@ -509,6 +508,9 @@ main {
 						width: 80%;
 						margin: auto;
 						color: @light;
+						@media (max-width: @sizes[tablet]) {
+							display: none;
+						}
 						@media (max-width: @sizes[mobile]) {
 							display: none;
 						}
@@ -532,6 +534,9 @@ main {
 							}
 							div {
 								padding-top: 20px;
+								@media (max-width: @sizes[tablet]) {
+									padding-top: none;
+								}
 							}
 							.media {
 								display: flex;
@@ -550,6 +555,9 @@ main {
 									line-height: 60px;
 									margin-left: 6px;
 									transition: all .25s;
+									@media (max-width: @sizes[tablet]) {
+										display: inline;
+									}
 								}
 							}
 						}
@@ -561,6 +569,9 @@ main {
 						width: 90%;
 						height: 47%;
 						border-radius: 5px;
+						@media (max-width: @sizes[tablet]) {
+							display: none;
+						}
 						@media (max-width: @sizes[mobile]) {
 							display: none;
 						}
@@ -578,11 +589,11 @@ main {
 				}
 			}
 		}
-		@media (max-width: @sizes[tablet]) {
-			&.form {
-				height: 1200px;
-			}
-		}
+		//@media (max-width: @sizes[tablet]) {
+		//	&.form {
+		//		//height: 1200px;
+		//	}
+		//}
 	}
 }
 

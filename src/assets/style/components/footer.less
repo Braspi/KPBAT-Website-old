@@ -17,7 +17,8 @@
 	user-select: none;
 
 	@media(max-width: @sizes[desktop]) {
-		width: 140px;
+		width: 130px;
+		top: 35%;
 	}
 
 	@media(max-width: @sizes[tablet]) {
@@ -36,7 +37,7 @@
 	justify-content: space-around;
 	flex-wrap: wrap;
 	margin: auto;
-	width: 30%;
+	width: 40%;
 
 	@media (max-width: @sizes[mobile]) {
 		flex-direction: column;
@@ -139,7 +140,7 @@ hr {
 	background: @light;
 
 	@media(max-width: @sizes[desktop]) {
-		margin-top: 50px;
+		margin-top: 35px;
 	}
 
 	@media(max-width: @sizes[tablet]) {
@@ -163,7 +164,7 @@ hr {
 	@media(max-width: @sizes[desktop]) {
 		font-size: 13px;
 		margin-left: 74%;
-		margin-top: 15px;
+		margin-top: 10px;
 	}
 
 	@media(max-width: @sizes[tablet]) {
@@ -176,11 +177,17 @@ hr {
 		font-size: 13px;
 		top: 75%;
 		font-weight: bold;
-		left: 50%;
+		left: -16%;
 		margin-left: 0px;
 		transform: translateX(-50%);
 		white-space: nowrap;
 		text-align: center;
+	}
+	@media(max-width: 1699px) {
+		margin-left: 75%;
+		@media(max-width: 1456px) {
+			margin-left: 67%;
+		}
 	}
 }
 
@@ -188,40 +195,41 @@ hr {
 	position: absolute;
 	margin-left: 3%;
 	margin-top: 20px;
-
 	p {
 		display: inline-block;
 		margin-left: 10px;
 	}
 
 	.next-con {
-		margin-top: 2px ;
+		margin-top: 2px;
 		display: block;
 		font-size: 13px;
 
 		@media(max-width: @sizes[desktop]) {
-			font-size: 9px;
-		}
-
-		@media(max-width: @sizes[desktop]) {
 			display: flex;
-			flex-direction: column;
-			text-align: center;
+			flex-direction: row;
 			left: 48%;
 			top: 50%;
 			// transform: translateX(-60%);
-			font-size: 13px;
+			font-size: 11px;
+		}
+		@media(max-width: @sizes[tablet]) {
+			font-size: 9px;
+			flex-direction: column;
+		}
+		@media(max-width: @sizes[mobile]) {
+			font-size: 11px;
 		}
 	}
 
 	@media(max-width: @sizes[desktop]) {
 		font-size: 13px;
-		margin-top: 15px;
+		margin-top: 10px;
 	}
 
 	@media(max-width: @sizes[tablet]) {
 		font-size: 10px;
-		margin-top: 12px;
+		margin-top: 10px;
 	}
 
 	@media(max-width: @sizes[mobile]) {

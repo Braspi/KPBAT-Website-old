@@ -37,7 +37,7 @@
                 "desc": "Si vous avez un problème, écrivez-nous!",
                 "form": {
                     "name": "Prénom",
-                    "surname": "Contactez-nous",
+                    "surname": "Nom",
                     "email": "E-mail",
                     "phone": "Téléphone",
                     "message": "Message",
