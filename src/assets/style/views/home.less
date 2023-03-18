@@ -303,6 +303,7 @@ main {
 				margin: auto;
 				padding-top: 150px;
 				justify-content: center;
+				padding-bottom: 65px;
 				.img {
 					width: 346px;
 					height: 560px;
@@ -311,7 +312,7 @@ main {
 					margin: 20px;
 					box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 					border-radius: 5px;
-					@media (max-width: @sizes[mobile]) {
+					@media (max-width: @sizes[desktop]) {
 						height: 250px;
 					}
 					img {
@@ -319,7 +320,7 @@ main {
 						height: 100%;
 						user-select: none;
 					}
-				@media (max-width: @sizes[mobile]) {
+				@media (max-width: @sizes[desktop]) {
 					padding-top: 100px;
 				}
 
@@ -354,7 +355,7 @@ main {
 				transition: transform .2s,
 				box-shadow .3s;
 				}
-				@media (max-width: @sizes[mobile]) {
+				@media (max-width: @sizes[desktop]) {
 					flex-wrap: wrap;
 				}
 			}
@@ -508,7 +509,7 @@ main {
 						width: 80%;
 						margin: auto;
 						color: @light;
-						@media (max-width: @sizes[tablet]) {
+						@media (max-width: @sizes-spec[desktop-spec]) {
 							display: none;
 						}
 						@media (max-width: @sizes[mobile]) {
@@ -534,7 +535,7 @@ main {
 							}
 							div {
 								padding-top: 20px;
-								@media (max-width: @sizes[tablet]) {
+								@media (max-width: @sizes-spec[desktop-spec]) {
 									padding-top: none;
 								}
 							}
@@ -555,7 +556,7 @@ main {
 									line-height: 60px;
 									margin-left: 6px;
 									transition: all .25s;
-									@media (max-width: @sizes[tablet]) {
+									@media (max-width: @sizes-spec[desktop-spec]) {
 										display: inline;
 									}
 								}
@@ -569,7 +570,7 @@ main {
 						width: 90%;
 						height: 47%;
 						border-radius: 5px;
-						@media (max-width: @sizes[tablet]) {
+						@media (max-width: @sizes-spec[desktop-spec]) {
 							display: none;
 						}
 						@media (max-width: @sizes[mobile]) {
@@ -578,7 +579,7 @@ main {
 					}
 				}
 			}
-			@media (max-width: @sizes[tablet]) {
+			@media (max-width: @sizes-spec[desktop-spec]) {
 				.form-container {
 					width: 80%;
 					flex-direction: column;
@@ -589,11 +590,29 @@ main {
 				}
 			}
 		}
-		//@media (max-width: @sizes[tablet]) {
-		//	&.form {
-		//		//height: 1200px;
-		//	}
-		//}
+		&.form {
+			height: 800px;
+		}
+		@media (max-width: @sizes-spec[desktop-spec]) {
+			&.form {
+				height: 1300px;
+			}
+		}
+		@media (max-width: @sizes[mobile]) {
+			&.form {
+				height: 1150px;
+			}
+		}
+		@media (max-width: 1850px) {
+			&.form {
+				height: 900px;
+			}
+		}
+		@media (max-width: 1200px) {
+			&.form {
+				height: 1100px;
+			}
+		}
 	}
 }
 
