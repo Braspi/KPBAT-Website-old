@@ -1,7 +1,7 @@
 <template lang="html">
     <div class="home">
         <main>
-            <img src="" alt="">
+            <img>
             <h1 class="title">{{ $t("main.title") }}</h1>
             <h2 class="desc">{{ $t("main.desc") }}</h2>
           <button @click="scrollToBottom">
