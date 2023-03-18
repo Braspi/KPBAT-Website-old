@@ -6,7 +6,7 @@
     <div class="links">
       <a href="/#" class="hua">{{ $t("nav.home") }}</a>
       <router-link to="/gallery" class="hua">{{ $t("nav.gallery") }}</router-link>
-      <a href="/#contact" class="hua">{{ $t("nav.contact") }}</a>
+      <a href="/#contact" @click="scrollToBottom" class="hua">{{ $t("nav.contact") }}</a>
     </div>
     <div class="lang">
       <img src="@/assets/icon/flags/france.jpeg" @click="changeLang('fr')" alt="france">
@@ -56,6 +56,9 @@ export default {
     onScroll() {
       let header = document.querySelector('.home main').getBoundingClientRect();
       this.navDetached = window.pageYOffset < (header.height / 8)
+    },
+    scrollToBottom(){
+      this.$refs['contact'].scrollIntoView({behavior: "smooth"})
     }
   }
 }
