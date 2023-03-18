@@ -1,19 +1,9 @@
 <template lang="html">
     <div class="home">
         <main>
-<!--            <Carousel-->
-<!--            :autoplay="5000"-->
-<!--            :wrap-around="true"-->
-<!--            :mouseDrag="false"-->
-<!--            :transition="1000"-->
-<!--            >-->
-<!--                <Slide v-for="(img, i) in images" :key="i">-->
-<!--                    <img class="carousel__item" :src="img" alt="">-->
-<!--                </Slide>-->
-<!--            </Carousel>-->
             <img src="" alt="">
-            <p class="title">{{ $t("main.title") }}</p>
-            <p class="desc">{{ $t("main.desc") }}</p>
+            <h1 class="title">{{ $t("main.title") }}</h1>
+            <h2 class="desc">{{ $t("main.desc") }}</h2>
           <button @click="scrollToBottom">
             <div class="scroll-down"></div>
           </button>
@@ -21,8 +11,8 @@
         <div class="wrapper" id="sechello">
             <section class="about invert" ref="bottom">
                 <div class="left">
-                    <p class="name">{{ $t("main.sections.s1.name") }}</p>
-                    <p class="title">{{ $t("main.sections.s1.title") }}</p>
+                    <h2 class="name">{{ $t("main.sections.s1.name") }}</h2>
+                    <h1 class="title">{{ $t("main.sections.s1.title") }}</h1>
                     <p class="desc">
                         {{ $t("main.sections.s1.line1") }}
                         <br><br>
@@ -189,7 +179,7 @@ export default {
         }
       },
   components: {
-      InputElement,
+        InputElement,
         Footer,
         Carousel,
         Slide,

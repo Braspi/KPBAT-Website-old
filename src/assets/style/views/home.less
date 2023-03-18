@@ -26,7 +26,17 @@ main {
 
 	@font: 2em;
 
-	p {
+	h1 {
+		position: absolute;
+		left: 50%;
+		text-align: center;
+		transform: translateX(-50%);
+		width: max-content;
+		text-align: center;
+		word-wrap: normal;
+		color: @light;
+	}
+	h2 {
 		position: absolute;
 		left: 50%;
 		text-align: center;
@@ -37,7 +47,7 @@ main {
 		color: @light;
 	}
 
-	p.title {
+	h1.title {
 		font-size: @font * 2;
 		top: 36%;
 
@@ -50,7 +60,35 @@ main {
 			top: 40%;
 		}
 	}
-	p.desc {
+	h2.title {
+		font-size: @font * 2;
+		top: 36%;
+
+		@media (max-width: @sizes[tablet]) {
+			font-size: @font * 2 - 1em;
+		}
+
+		@media (max-width: @sizes[mobile]) {
+			font-size: @font * 2 - 2.3em;
+			top: 40%;
+		}
+	}
+	h1.desc {
+		font-size: @font;
+		top: 46%;
+		word-break: normal;
+		width: 90%;
+		font-weight: 300;
+
+		@media (max-width: @sizes[tablet]) {
+			top: 45%;
+			font-size: @font - 0.5em;
+		}
+		@media (max-width: @sizes[mobile]) {
+			font-size: @font - 0.75em;
+		}
+	}
+	h2.desc {
 		font-size: @font;
 		top: 46%;
 		word-break: normal;
