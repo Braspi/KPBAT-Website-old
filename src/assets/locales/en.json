@@ -52,6 +52,10 @@
                 "left": {
                     "title": "Contact details",
                     "desc": "Our contact data"
+                },
+                "right": {
+                    "tel": "contact telephone",
+                    "mail": "contact email"
                 }
             }
         }

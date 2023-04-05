@@ -1,9 +1,9 @@
 <template>
     <section>
-      <div class="top">
-        <p class="title">{{ $t("main.sections.s2.title") }}</p>
-        <p class="desc">{{ $t("main.sections.s2.desc") }}</p>
-      </div>
+<!--      <div class="top">-->
+<!--        <p class="title">{{ $t("main.sections.s2.title") }}</p>-->
+<!--        <p class="desc">{{ $t("main.sections.s2.desc") }}</p>-->
+<!--      </div>-->
         <div class="wrapper">
           <div class="content-box" v-for="(service, index) in services" :key="index">
             <div class="card" @mouseover="mouseEnterHandle($event, require(`@/assets/img/ourservices/${index+1}.webp`))" @mouseleave="mouseLeaveHandle">
