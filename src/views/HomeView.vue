@@ -117,11 +117,11 @@
                           <p>{{ $t('main.sections.s5.left.desc')}}</p>
                           <div class="media telephone">
                             <label><font-awesome-icon icon="fa-solid fa-phone" class="fa-solid"/></label>
-                            <h2><p>contact telephone</p>+33 6 38 61 77 95</h2>
+                            <h2><p>{{ $t('main.sections.s5.right.tel') }}</p>+33 6 38 61 77 95</h2>
                           </div>
                           <div class="media mail">
                             <label><font-awesome-icon icon="fa-solid fa-envelope" class="fa-solid"/></label>
-                            <h2><p>contact email</p>k.p.batiment@gmail.com</h2>
+                            <h2><p>{{ $t('main.sections.s5.right.mail') }}</p>k.p.batiment@gmail.com</h2>
                           </div>
                         </div>
                       </div>
