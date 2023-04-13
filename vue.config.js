@@ -1,7 +1,7 @@
 const { defineConfig } = require('@vue/cli-service')
-const SitemapPlugin = require('sitemap-webpack-plugin').default;
+// const SitemapPlugin = require('sitemap-webpack-plugin').default;
 
-const paths = [
+const routes = [
   {
     path: '/',
     lastmod: new Date().toISOString().slice(0,10),
@@ -12,14 +12,20 @@ const paths = [
 
 module.exports = defineConfig({
   transpileDependencies: true,
-  configureWebpack: {
-    plugins: [
-      new SitemapPlugin('https://kpbat.com', paths, {
-        filename: 'sitemap.xml',
-        lastmod: true,
-        changefreq: 'hourly',
-        priority: '0.8'
-      })
-    ]
+  pluginOptions: {
+    sitemap: {
+      baseURL: "https://kpbat.com",
+      routes,
+    }
   }
+  // configureWebpack: {
+  //   plugins: [
+  //     new SitemapPlugin('https://kpbat.com', paths, {
+  //       filename: 'sitemap.xml',
+  //       lastmod: true,
+  //       changefreq: 'hourly',
+  //       priority: '0.8'
+  //     })
+  //   ]
+  // }
 })
