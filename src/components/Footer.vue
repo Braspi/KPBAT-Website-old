@@ -15,9 +15,7 @@
 			<a href="https://www.instagram.com/kp_bat/"><font-awesome-icon icon="fa-brands fa-instagram" class="fai"/></a>
 			<a href="https://www.pinterest.fr/kp_bat/"><font-awesome-icon icon="fa-brands fa-pinterest" class="fai"/></a>
 		</div>
-
 		<hr size="1px">
-
 		<div class="contact">
 			<p class="number">+33 6 38 61 77 95</p>
 			<p class="mail">contact@kpbat.com</p>

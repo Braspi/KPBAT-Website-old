@@ -1,19 +1,9 @@
 <template lang="html">
     <div class="home">
         <main>
-<!--            <Carousel-->
-<!--            :autoplay="5000"-->
-<!--            :wrap-around="true"-->
-<!--            :mouseDrag="false"-->
-<!--            :transition="1000"-->
-<!--            >-->
-<!--                <Slide v-for="(img, i) in images" :key="i">-->
-<!--                    <img class="carousel__item" :src="img" alt="">-->
-<!--                </Slide>-->
-<!--            </Carousel>-->
-            <img src="" alt="">
-            <p class="title">{{ $t("main.title") }}</p>
-            <p class="desc">{{ $t("main.desc") }}</p>
+            <img>
+            <h1 class="title">{{ $t("main.title") }}</h1>
+            <h2 class="desc">{{ $t("main.desc") }}</h2>
           <button @click="scrollToBottom">
             <div class="scroll-down"></div>
           </button>
@@ -21,8 +11,8 @@
         <div class="wrapper" id="sechello">
             <section class="about invert" ref="bottom">
                 <div class="left">
-                    <p class="name">{{ $t("main.sections.s1.name") }}</p>
-                    <p class="title">{{ $t("main.sections.s1.title") }}</p>
+                    <h2 class="name">{{ $t("main.sections.s1.name") }}</h2>
+                    <h1 class="title">{{ $t("main.sections.s1.title") }}</h1>
                     <p class="desc">
                         {{ $t("main.sections.s1.line1") }}
                         <br><br>
@@ -31,7 +21,7 @@
                         {{ $t("main.sections.s1.line3") }}
                     </p>
                 </div>
-                <img :src="require('../assets/img/1.png')" alt="">
+                <img :src="require('../assets/img/1.webp')" alt="">
             </section>
             <section class="work">
                 <div class="top">
@@ -39,12 +29,12 @@
                     <p class="desc">{{ $t("main.sections.s2.desc") }}</p>
                 </div>
                 <div class="imgs">
-                    <img :src="require('../assets/img/gallery/1.jpg')" alt="">
-                    <img :src="require('../assets/img/gallery/2.jpg')" alt="">
-                    <img :src="require('../assets/img/gallery/3.jpg')" alt="">
-                    <img :src="require('../assets/img/gallery/4.jpg')" alt="">
-                    <img :src="require('../assets/img/gallery/5.jpg')" alt="">
-                    <img :src="require('../assets/img/gallery/6.jpg')" alt="">
+                    <img :src="require('../assets/img/gallery/1.webp')" alt="">
+                    <img :src="require('../assets/img/gallery/2.webp')" alt="">
+                    <img :src="require('../assets/img/gallery/3.webp')" alt="">
+                    <img :src="require('../assets/img/gallery/4.webp')" alt="">
+                    <img :src="require('../assets/img/gallery/5.webp')" alt="">
+                    <img :src="require('../assets/img/gallery/6.webp')" alt="">
                 </div>
                 <router-link to="/gallery" class="button">{{ $t("main.sections.s2.btn") }}</router-link>
             </section>
@@ -55,21 +45,21 @@
               </div>
               <div class="imgs">
                 <router-link to="/ourservices" @click="scrollToTop">
-                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/1.jpg')}) !important`">
+                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/1.webp')}) !important`">
                     <div class="button-content btn-hover">
                         <p>{{ $t("main.sections.s3.imgs.img1") }}</p>
                     </div>
                 </div>
                 </router-link>
                 <router-link to="/ourservices" @click="scrollToTop">
-                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/2.jpg')}) !important`">
+                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/2.webp')}) !important`">
                   <div class="button-content">
                     <p>{{ $t("main.sections.s3.imgs.img2") }}</p>
                   </div>
                 </div>
                 </router-link>
                 <router-link to="/ourservices" @click="scrollToTop">
-                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/3.jpg')}) !important`">
+                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/3.webp')}) !important`">
                   <div class="button-content">
                     <p>{{ $t("main.sections.s3.imgs.img3") }}</p>
                   </div>
@@ -91,11 +81,11 @@
                             <form @submit.prevent="sendMail()">
                                 <div class="p50">
                                     <label for="inp1">{{ $t('main.sections.s4.form.name') }}</label>
-                                    <input type="text" id="inp1" v-model="name" :placeholder="`${$t('main.sections.s4.form.name')}`">
+                                    <input type="text" id="inp1" v-model="firstName" :placeholder="`${$t('main.sections.s4.form.name')}`">
                                 </div>
                                 <div class="p50">
                                     <label for="inp1">{{ $t('main.sections.s4.form.surname') }}</label>
-                                    <input type="text" id="inp1" v-model="surname" :placeholder="`${$t('main.sections.s4.form.surname')}`">
+                                    <input type="text" id="inp1" v-model="lastName" :placeholder="`${$t('main.sections.s4.form.surname')}`">
                                 </div>
                                 <div class="p50">
                                     <label for="inp2">{{ $t('main.sections.s4.form.email') }}</label>
@@ -103,7 +93,7 @@
                                 </div>
                                 <div class="p50">
                                     <label for="inp3">{{ $t('main.sections.s4.form.phone') }}</label>
-                                    <input type="text" id="inp3" v-model="phone" :placeholder="`${$t('main.sections.s4.form.phone')}`">
+                                    <input type="text" id="inp3" v-model="phoneNumber" :placeholder="`${$t('main.sections.s4.form.phone')}`">
                                 </div>
                                 <div class="p100">
                                     <label for="inp4">{{ $t('main.sections.s4.form.message') }}</label>
@@ -127,11 +117,11 @@
                           <p>{{ $t('main.sections.s5.left.desc')}}</p>
                           <div class="media telephone">
                             <label><font-awesome-icon icon="fa-solid fa-phone" class="fa-solid"/></label>
-                            <h2><p>contact telephone</p>+33 6 38 61 77 95</h2>
+                            <h2><p>{{ $t('main.sections.s5.right.tel') }}</p>+33 6 38 61 77 95</h2>
                           </div>
                           <div class="media mail">
                             <label><font-awesome-icon icon="fa-solid fa-envelope" class="fa-solid"/></label>
-                            <h2><p>contact email</p>contact@kpbat.com</h2>
+                            <h2><p>{{ $t('main.sections.s5.right.mail') }}</p>k.p.batiment@gmail.com</h2>
                           </div>
                         </div>
                       </div>
@@ -157,14 +147,12 @@ export default {
         return {
             currentSlide: 0,
             images: [
-                require("../assets/img/carousel/1.jpg"),
-                require("../assets/img/carousel/2.jpg"),
-                require("../assets/img/carousel/3.jpg"),
-                require("../assets/img/carousel/4.jpg"),
+                require("../assets/img/carousel/1.webp"),
             ],
-            name: "",
+            firstName: "",
+            lastName: "",
             email: "",
-            phone: "",
+            phoneNumber: "",
             message: "",
         }
     },
@@ -191,7 +179,7 @@ export default {
         }
       },
   components: {
-      InputElement,
+        InputElement,
         Footer,
         Carousel,
         Slide,

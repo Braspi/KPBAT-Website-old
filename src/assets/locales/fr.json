@@ -24,7 +24,7 @@
             "s3": {
                 "title": "Nos services",
                 "desc": "Nous fournissons des services et des produits qui établissent des normes élevées de qualité, de fiabilité et de durabilité.",
-                "btn": "Apprendre encore plus",
+                "btn": "En savoir plus",
                 "imgs": {
                     "img1": "Rénovation Extérieur",
                     "img2": "Rénovation Intérieur",
@@ -37,7 +37,7 @@
                 "desc": "Si vous avez un problème, écrivez-nous!",
                 "form": {
                     "name": "Prénom",
-                    "surname": "Contactez-nous",
+                    "surname": "Nom",
                     "email": "E-mail",
                     "phone": "Téléphone",
                     "message": "Message",
@@ -52,6 +52,10 @@
                 "left": {
                     "title": "Contactez-nous",
                     "desc": "Détails du contact"
+                },
+                "right": {
+                    "tel": "contact par téléphone",
+                    "mail": "contact per e-mail"
                 }
             }
         }
@@ -99,7 +103,7 @@
         }
     },
     "footer": {
-        "home" : "Accueli",
+        "home" : "Accueil",
         "gallery": "Galerie",
         "contact" : "Contact"
    }
