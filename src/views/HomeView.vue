@@ -19,6 +19,8 @@
                         {{ $t("main.sections.s1.line2") }}
                         <br><br>
                         {{ $t("main.sections.s1.line3") }}
+                        <br><br>
+                        {{ $t("main.sections.s1.line4") }}
                     </p>
                 </div>
                 <img :src="require('../assets/img/1.webp')" alt="">
