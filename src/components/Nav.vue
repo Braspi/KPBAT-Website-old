@@ -1,16 +1,16 @@
 <template lang="html">
   <div class="nav" :class="{ bg: !navDetached }" >
     <router-link to="/">
-      <img src="@/assets/icon/logo/LOGO1_alpha.png" alt="logo" class="logo">
+      <img src="@/assets/icon/logo/LOGO2_alpha.png" alt="logo" class="logo">
     </router-link>
     <div class="links">
       <a href="/#" class="hua">{{ $t("nav.home") }}</a>
       <router-link to="/gallery" class="hua">{{ $t("nav.gallery") }}</router-link>
-      <a href="/#contact" @click="scrollToBottom" class="hua">{{ $t("nav.contact") }}</a>
+      <a href="/#contact" class="hua">{{ $t("nav.contact") }}</a>
     </div>
     <div class="lang">
-      <img src="@/assets/icon/flags/france.jpeg" @click="changeLang('fr')" alt="france">
-      <img src="@/assets/icon/flags/united_kingdom.jpeg" @click="changeLang('en')" alt="united_kingdom" >
+      <img src="@/assets/icon/flags/france.webp" @click="changeLang('fr')" alt="france">
+      <img src="@/assets/icon/flags/united_kingdom.webp" @click="changeLang('en')" alt="united_kingdom" >
     </div>
 
     <font-awesome-icon icon="fa-solid fa-bars" @click="showNav()" class="bars" size="3x"/>
@@ -24,8 +24,8 @@
         </div>
         <h1>{{ $t("nav.language") }}:</h1>
         <div class="lang">
-          <img src="@/assets/icon/flags/france.jpeg" @click="changeLang('fr')" alt="france">
-          <img src="@/assets/icon/flags/united_kingdom.jpeg" @click="changeLang('en')" alt="united_kingdom">
+          <img src="@/assets/icon/flags/france.webp" @click="changeLang('fr')" alt="france">
+          <img src="@/assets/icon/flags/united_kingdom.webp" @click="changeLang('en')" alt="united_kingdom">
         </div>
       </div>
     </div>
@@ -56,9 +56,6 @@ export default {
     onScroll() {
       let header = document.querySelector('.home main').getBoundingClientRect();
       this.navDetached = window.pageYOffset < (header.height / 8)
-    },
-    scrollToBottom(){
-      this.$refs['contact'].scrollIntoView({behavior: "smooth"})
     }
   }
 }

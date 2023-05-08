@@ -43,30 +43,15 @@
                 <p class="title">{{ $t("main.sections.s3.title") }}</p>
                 <p class="desc">{{ $t("main.sections.s3.desc") }}</p>
               </div>
-              <div class="imgs">
-                <router-link to="/ourservices" @click="scrollToTop">
-                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/1.webp')}) !important`">
-                    <div class="button-content btn-hover">
-                        <p>{{ $t("main.sections.s3.imgs.img1") }}</p>
-                    </div>
-                </div>
-                </router-link>
-                <router-link to="/ourservices" @click="scrollToTop">
-                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/2.webp')}) !important`">
-                  <div class="button-content">
-                    <p>{{ $t("main.sections.s3.imgs.img2") }}</p>
+                  <div class="wrapper-2">
+                      <div class="content-box" v-for="(service, index) in services" :key="index">
+                          <div class="card" @mouseover="mouseEnterHandle($event, require(`@/assets/img/ourservices/${index+1}.webp`))" @mouseleave="mouseLeaveHandle">
+                              <font-awesome-icon :icon="service.iconName"/>
+                              <h2>{{ $t(service.name) }}</h2>
+                              <p>{{ $t(service.description) }}</p>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                </router-link>
-                <router-link to="/ourservices" @click="scrollToTop">
-                <div class="img bg" :style="`background-image: url(${require('../assets/img/services/3.webp')}) !important`">
-                  <div class="button-content">
-                    <p>{{ $t("main.sections.s3.imgs.img3") }}</p>
-                  </div>
-                </div>
-                </router-link>
-                <router-link to="/ourservices" class="button" @click="scrollToTop">{{ $t("main.sections.s3.btn") }}</router-link>
-              </div>
             </section>
             <section class="form" id="contact">
                 <div class="top">
@@ -154,6 +139,26 @@ export default {
             email: "",
             phoneNumber: "",
             message: "",
+            services: [
+                {
+                    background: '@/assets/img/ourservices/1.webp',
+                    iconName: 'fa-solid fa-house',
+                    name: "ourservices.services.s1.title",
+                    description: "ourservices.services.s1.desc"
+                },
+                {
+                    background: '@/assets/img/ourservices/2.webp',
+                    iconName: 'fa-solid fa-dungeon',
+                    name: "ourservices.services.s2.title",
+                    description: "ourservices.services.s2.desc"
+                },
+                {
+                    background: '@/assets/img/ourservices/3.webp',
+                    iconName: 'fa-solid fa-toolbox',
+                    name: "ourservices.services.s3.title",
+                    description: "ourservices.services.s3.desc"
+                }
+            ]
         }
     },
     methods: {
@@ -176,6 +181,14 @@ export default {
         },
         scrollToBottom(){
           this.$refs['bottom'].scrollIntoView({behavior: "smooth"})
+        },
+        mouseEnterHandle(event, image) {
+            if (event.target.tagName !== 'DIV') return;
+            event.target.style.background = `linear-gradient(45deg, rgba(42, 42, 42,0.7) 0%, rgba(69, 69, 69, 0.7) 100%), url('${image}')`
+            event.target.style.backgroundSize = `cover`
+        },
+        mouseLeaveHandle() {
+            event.target.style.background = `#fff`
         }
       },
   components: {

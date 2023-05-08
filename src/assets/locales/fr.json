@@ -10,11 +10,11 @@
         "desc": "Clairement la meilleure entreprise de rénovation du marché.",
         "sections": {
             "s1": {
-                "name": "Qui sommes nous?",
-                "title": "KP BAT s'occupe de la mise en œuvre complète des projets.",
-                "line1": "En essayant d'accompagner les clients à chaque étape des travaux. Au travail, le plus important pour nous est de répondre aux attentes des investisseurs, tout en veillant au fonctionnalisme, au confort et à l'esthétique de l'espace.",
-                "line2": "Nous sommes spécialisés dans la rénovation d’appartements, maisons, bureaux et commerces.",
-                "line3": "N’hésitez pas, écrivez ou appelez. Nous garantissons votre satisfaction et une approche individuelle de votre projet."
+                "name": "Oui sommes nous?",
+                "title": "Votre entreprise spécialisée dans la rénovation.",
+                "line1": "Nous mettons à votre disposition une équipe de professionnels qualifiés et expérimentés pour réaliser tous vos projets de rénovation, du simple rafraîchissement de peinture à la rénovation complète.",
+                "line2": "Nous vous proposons une large gamme de services pour répondre à tous vos besoins : peinture, revêtement de sol, plomberie, électricité, menuiserie, aménagement de cuisine et salle de bain, etc.",
+                "line3": "Nous travaillons avec des matériaux de qualité supérieure pour garantir un résultat durable et esthétique. Nous sommes à l'écoute de vos besoins et de vos attentes pour vous offrir une prestation sur mesure, adaptée à votre budget et à vos contraintes."
             },
             "s2": {
                 "title": "Découvrez nos dernières réalisations!",
@@ -66,39 +66,15 @@
         "services": {
             "s1": {
                 "title": "Rénovation Extérieur",
-                "desc": ""
+                "desc": "Nous avons de l'expérience dans les travaux extérieurs et nous sommes heureux de vous proposer notre expertise pour tous vos projets de rafraîchissement de façade, de remplacement de toiture..."
             },
             "s2": {
                 "title": "Rénovation Intérieur",
-                "desc": ""
+                "desc": "KP BAT, entreprise spécialisée dans les travaux de rénovation intérieure, vous propose ses services pour tous vos projets de rénovation. Nous sommes à votre disposition pour réaliser tous les travaux..."
             },
             "s3": {
                 "title": "Rénovation Énergétique",
-                "desc": ""
-            },
-            "s4": {
-                "title": "Maçonnerie",
-                "desc": ""
-            },
-            "s5": {
-                "title": "Plomberie/Chauffage",
-                "desc": ""
-            },
-            "s6": {
-                "title": "Isolation intérieure/Extérieure",
-                "desc": ""
-            },
-            "s7": {
-                "title": "Revêtement de sol",
-                "desc": ""
-            },
-            "s8": {
-                "title": "Plâtrerie",
-                "desc": ""
-            },
-            "s9": {
-                "title": "Peinture",
-                "desc": ""
+                "desc": "La société KP BAT propose ses services pour accompagner les particuliers et les entreprises dans le domaine du Diagnostic de Performance Énergétique (DPE) et leurs projets de rénovation énergétique."
             }
         }
     },
